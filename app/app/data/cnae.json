@@ -1,0 +1,3910 @@
+{
+    "CNAE": [
+      {
+        "seccion": "A",
+        "titulo": "Agricultura, ganadería, silvicultura y pesca",
+        "divisiones": [
+          {
+            "codigo": "01",
+            "titulo": "División simulada 01",
+            "grupos": [
+              {
+                "codigo": "011",
+                "titulo": "Grupo simulado 011",
+                "clases": [
+                  {
+                    "codigo": "0111",
+                    "titulo": "Clase simulada 0111"
+                  },
+                  {
+                    "codigo": "0112",
+                    "titulo": "Clase simulada 0112"
+                  },
+                  {
+                    "codigo": "0113",
+                    "titulo": "Clase simulada 0113"
+                  }
+                ]
+              },
+              {
+                "codigo": "012",
+                "titulo": "Grupo simulado 012",
+                "clases": [
+                  {
+                    "codigo": "0121",
+                    "titulo": "Clase simulada 0121"
+                  },
+                  {
+                    "codigo": "0122",
+                    "titulo": "Clase simulada 0122"
+                  },
+                  {
+                    "codigo": "0123",
+                    "titulo": "Clase simulada 0123"
+                  }
+                ]
+              },
+              {
+                "codigo": "013",
+                "titulo": "Grupo simulado 013",
+                "clases": [
+                  {
+                    "codigo": "0131",
+                    "titulo": "Clase simulada 0131"
+                  },
+                  {
+                    "codigo": "0132",
+                    "titulo": "Clase simulada 0132"
+                  },
+                  {
+                    "codigo": "0133",
+                    "titulo": "Clase simulada 0133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "02",
+            "titulo": "División simulada 02",
+            "grupos": [
+              {
+                "codigo": "021",
+                "titulo": "Grupo simulado 021",
+                "clases": [
+                  {
+                    "codigo": "0211",
+                    "titulo": "Clase simulada 0211"
+                  },
+                  {
+                    "codigo": "0212",
+                    "titulo": "Clase simulada 0212"
+                  },
+                  {
+                    "codigo": "0213",
+                    "titulo": "Clase simulada 0213"
+                  }
+                ]
+              },
+              {
+                "codigo": "022",
+                "titulo": "Grupo simulado 022",
+                "clases": [
+                  {
+                    "codigo": "0221",
+                    "titulo": "Clase simulada 0221"
+                  },
+                  {
+                    "codigo": "0222",
+                    "titulo": "Clase simulada 0222"
+                  },
+                  {
+                    "codigo": "0223",
+                    "titulo": "Clase simulada 0223"
+                  }
+                ]
+              },
+              {
+                "codigo": "023",
+                "titulo": "Grupo simulado 023",
+                "clases": [
+                  {
+                    "codigo": "0231",
+                    "titulo": "Clase simulada 0231"
+                  },
+                  {
+                    "codigo": "0232",
+                    "titulo": "Clase simulada 0232"
+                  },
+                  {
+                    "codigo": "0233",
+                    "titulo": "Clase simulada 0233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "03",
+            "titulo": "División simulada 03",
+            "grupos": [
+              {
+                "codigo": "031",
+                "titulo": "Grupo simulado 031",
+                "clases": [
+                  {
+                    "codigo": "0311",
+                    "titulo": "Clase simulada 0311"
+                  },
+                  {
+                    "codigo": "0312",
+                    "titulo": "Clase simulada 0312"
+                  },
+                  {
+                    "codigo": "0313",
+                    "titulo": "Clase simulada 0313"
+                  }
+                ]
+              },
+              {
+                "codigo": "032",
+                "titulo": "Grupo simulado 032",
+                "clases": [
+                  {
+                    "codigo": "0321",
+                    "titulo": "Clase simulada 0321"
+                  },
+                  {
+                    "codigo": "0322",
+                    "titulo": "Clase simulada 0322"
+                  },
+                  {
+                    "codigo": "0323",
+                    "titulo": "Clase simulada 0323"
+                  }
+                ]
+              },
+              {
+                "codigo": "033",
+                "titulo": "Grupo simulado 033",
+                "clases": [
+                  {
+                    "codigo": "0331",
+                    "titulo": "Clase simulada 0331"
+                  },
+                  {
+                    "codigo": "0332",
+                    "titulo": "Clase simulada 0332"
+                  },
+                  {
+                    "codigo": "0333",
+                    "titulo": "Clase simulada 0333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "B",
+        "titulo": "Industrias extractivas",
+        "divisiones": [
+          {
+            "codigo": "11",
+            "titulo": "División simulada 11",
+            "grupos": [
+              {
+                "codigo": "111",
+                "titulo": "Grupo simulado 111",
+                "clases": [
+                  {
+                    "codigo": "1111",
+                    "titulo": "Clase simulada 1111"
+                  },
+                  {
+                    "codigo": "1112",
+                    "titulo": "Clase simulada 1112"
+                  },
+                  {
+                    "codigo": "1113",
+                    "titulo": "Clase simulada 1113"
+                  }
+                ]
+              },
+              {
+                "codigo": "112",
+                "titulo": "Grupo simulado 112",
+                "clases": [
+                  {
+                    "codigo": "1121",
+                    "titulo": "Clase simulada 1121"
+                  },
+                  {
+                    "codigo": "1122",
+                    "titulo": "Clase simulada 1122"
+                  },
+                  {
+                    "codigo": "1123",
+                    "titulo": "Clase simulada 1123"
+                  }
+                ]
+              },
+              {
+                "codigo": "113",
+                "titulo": "Grupo simulado 113",
+                "clases": [
+                  {
+                    "codigo": "1131",
+                    "titulo": "Clase simulada 1131"
+                  },
+                  {
+                    "codigo": "1132",
+                    "titulo": "Clase simulada 1132"
+                  },
+                  {
+                    "codigo": "1133",
+                    "titulo": "Clase simulada 1133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "12",
+            "titulo": "División simulada 12",
+            "grupos": [
+              {
+                "codigo": "121",
+                "titulo": "Grupo simulado 121",
+                "clases": [
+                  {
+                    "codigo": "1211",
+                    "titulo": "Clase simulada 1211"
+                  },
+                  {
+                    "codigo": "1212",
+                    "titulo": "Clase simulada 1212"
+                  },
+                  {
+                    "codigo": "1213",
+                    "titulo": "Clase simulada 1213"
+                  }
+                ]
+              },
+              {
+                "codigo": "122",
+                "titulo": "Grupo simulado 122",
+                "clases": [
+                  {
+                    "codigo": "1221",
+                    "titulo": "Clase simulada 1221"
+                  },
+                  {
+                    "codigo": "1222",
+                    "titulo": "Clase simulada 1222"
+                  },
+                  {
+                    "codigo": "1223",
+                    "titulo": "Clase simulada 1223"
+                  }
+                ]
+              },
+              {
+                "codigo": "123",
+                "titulo": "Grupo simulado 123",
+                "clases": [
+                  {
+                    "codigo": "1231",
+                    "titulo": "Clase simulada 1231"
+                  },
+                  {
+                    "codigo": "1232",
+                    "titulo": "Clase simulada 1232"
+                  },
+                  {
+                    "codigo": "1233",
+                    "titulo": "Clase simulada 1233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "13",
+            "titulo": "División simulada 13",
+            "grupos": [
+              {
+                "codigo": "131",
+                "titulo": "Grupo simulado 131",
+                "clases": [
+                  {
+                    "codigo": "1311",
+                    "titulo": "Clase simulada 1311"
+                  },
+                  {
+                    "codigo": "1312",
+                    "titulo": "Clase simulada 1312"
+                  },
+                  {
+                    "codigo": "1313",
+                    "titulo": "Clase simulada 1313"
+                  }
+                ]
+              },
+              {
+                "codigo": "132",
+                "titulo": "Grupo simulado 132",
+                "clases": [
+                  {
+                    "codigo": "1321",
+                    "titulo": "Clase simulada 1321"
+                  },
+                  {
+                    "codigo": "1322",
+                    "titulo": "Clase simulada 1322"
+                  },
+                  {
+                    "codigo": "1323",
+                    "titulo": "Clase simulada 1323"
+                  }
+                ]
+              },
+              {
+                "codigo": "133",
+                "titulo": "Grupo simulado 133",
+                "clases": [
+                  {
+                    "codigo": "1331",
+                    "titulo": "Clase simulada 1331"
+                  },
+                  {
+                    "codigo": "1332",
+                    "titulo": "Clase simulada 1332"
+                  },
+                  {
+                    "codigo": "1333",
+                    "titulo": "Clase simulada 1333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "C",
+        "titulo": "Industria manufacturera",
+        "divisiones": [
+          {
+            "codigo": "21",
+            "titulo": "División simulada 21",
+            "grupos": [
+              {
+                "codigo": "211",
+                "titulo": "Grupo simulado 211",
+                "clases": [
+                  {
+                    "codigo": "2111",
+                    "titulo": "Clase simulada 2111"
+                  },
+                  {
+                    "codigo": "2112",
+                    "titulo": "Clase simulada 2112"
+                  },
+                  {
+                    "codigo": "2113",
+                    "titulo": "Clase simulada 2113"
+                  }
+                ]
+              },
+              {
+                "codigo": "212",
+                "titulo": "Grupo simulado 212",
+                "clases": [
+                  {
+                    "codigo": "2121",
+                    "titulo": "Clase simulada 2121"
+                  },
+                  {
+                    "codigo": "2122",
+                    "titulo": "Clase simulada 2122"
+                  },
+                  {
+                    "codigo": "2123",
+                    "titulo": "Clase simulada 2123"
+                  }
+                ]
+              },
+              {
+                "codigo": "213",
+                "titulo": "Grupo simulado 213",
+                "clases": [
+                  {
+                    "codigo": "2131",
+                    "titulo": "Clase simulada 2131"
+                  },
+                  {
+                    "codigo": "2132",
+                    "titulo": "Clase simulada 2132"
+                  },
+                  {
+                    "codigo": "2133",
+                    "titulo": "Clase simulada 2133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "22",
+            "titulo": "División simulada 22",
+            "grupos": [
+              {
+                "codigo": "221",
+                "titulo": "Grupo simulado 221",
+                "clases": [
+                  {
+                    "codigo": "2211",
+                    "titulo": "Clase simulada 2211"
+                  },
+                  {
+                    "codigo": "2212",
+                    "titulo": "Clase simulada 2212"
+                  },
+                  {
+                    "codigo": "2213",
+                    "titulo": "Clase simulada 2213"
+                  }
+                ]
+              },
+              {
+                "codigo": "222",
+                "titulo": "Grupo simulado 222",
+                "clases": [
+                  {
+                    "codigo": "2221",
+                    "titulo": "Clase simulada 2221"
+                  },
+                  {
+                    "codigo": "2222",
+                    "titulo": "Clase simulada 2222"
+                  },
+                  {
+                    "codigo": "2223",
+                    "titulo": "Clase simulada 2223"
+                  }
+                ]
+              },
+              {
+                "codigo": "223",
+                "titulo": "Grupo simulado 223",
+                "clases": [
+                  {
+                    "codigo": "2231",
+                    "titulo": "Clase simulada 2231"
+                  },
+                  {
+                    "codigo": "2232",
+                    "titulo": "Clase simulada 2232"
+                  },
+                  {
+                    "codigo": "2233",
+                    "titulo": "Clase simulada 2233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "23",
+            "titulo": "División simulada 23",
+            "grupos": [
+              {
+                "codigo": "231",
+                "titulo": "Grupo simulado 231",
+                "clases": [
+                  {
+                    "codigo": "2311",
+                    "titulo": "Clase simulada 2311"
+                  },
+                  {
+                    "codigo": "2312",
+                    "titulo": "Clase simulada 2312"
+                  },
+                  {
+                    "codigo": "2313",
+                    "titulo": "Clase simulada 2313"
+                  }
+                ]
+              },
+              {
+                "codigo": "232",
+                "titulo": "Grupo simulado 232",
+                "clases": [
+                  {
+                    "codigo": "2321",
+                    "titulo": "Clase simulada 2321"
+                  },
+                  {
+                    "codigo": "2322",
+                    "titulo": "Clase simulada 2322"
+                  },
+                  {
+                    "codigo": "2323",
+                    "titulo": "Clase simulada 2323"
+                  }
+                ]
+              },
+              {
+                "codigo": "233",
+                "titulo": "Grupo simulado 233",
+                "clases": [
+                  {
+                    "codigo": "2331",
+                    "titulo": "Clase simulada 2331"
+                  },
+                  {
+                    "codigo": "2332",
+                    "titulo": "Clase simulada 2332"
+                  },
+                  {
+                    "codigo": "2333",
+                    "titulo": "Clase simulada 2333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "D",
+        "titulo": "Suministro de energía eléctrica, gas, vapor y aire acondicionado",
+        "divisiones": [
+          {
+            "codigo": "31",
+            "titulo": "División simulada 31",
+            "grupos": [
+              {
+                "codigo": "311",
+                "titulo": "Grupo simulado 311",
+                "clases": [
+                  {
+                    "codigo": "3111",
+                    "titulo": "Clase simulada 3111"
+                  },
+                  {
+                    "codigo": "3112",
+                    "titulo": "Clase simulada 3112"
+                  },
+                  {
+                    "codigo": "3113",
+                    "titulo": "Clase simulada 3113"
+                  }
+                ]
+              },
+              {
+                "codigo": "312",
+                "titulo": "Grupo simulado 312",
+                "clases": [
+                  {
+                    "codigo": "3121",
+                    "titulo": "Clase simulada 3121"
+                  },
+                  {
+                    "codigo": "3122",
+                    "titulo": "Clase simulada 3122"
+                  },
+                  {
+                    "codigo": "3123",
+                    "titulo": "Clase simulada 3123"
+                  }
+                ]
+              },
+              {
+                "codigo": "313",
+                "titulo": "Grupo simulado 313",
+                "clases": [
+                  {
+                    "codigo": "3131",
+                    "titulo": "Clase simulada 3131"
+                  },
+                  {
+                    "codigo": "3132",
+                    "titulo": "Clase simulada 3132"
+                  },
+                  {
+                    "codigo": "3133",
+                    "titulo": "Clase simulada 3133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "32",
+            "titulo": "División simulada 32",
+            "grupos": [
+              {
+                "codigo": "321",
+                "titulo": "Grupo simulado 321",
+                "clases": [
+                  {
+                    "codigo": "3211",
+                    "titulo": "Clase simulada 3211"
+                  },
+                  {
+                    "codigo": "3212",
+                    "titulo": "Clase simulada 3212"
+                  },
+                  {
+                    "codigo": "3213",
+                    "titulo": "Clase simulada 3213"
+                  }
+                ]
+              },
+              {
+                "codigo": "322",
+                "titulo": "Grupo simulado 322",
+                "clases": [
+                  {
+                    "codigo": "3221",
+                    "titulo": "Clase simulada 3221"
+                  },
+                  {
+                    "codigo": "3222",
+                    "titulo": "Clase simulada 3222"
+                  },
+                  {
+                    "codigo": "3223",
+                    "titulo": "Clase simulada 3223"
+                  }
+                ]
+              },
+              {
+                "codigo": "323",
+                "titulo": "Grupo simulado 323",
+                "clases": [
+                  {
+                    "codigo": "3231",
+                    "titulo": "Clase simulada 3231"
+                  },
+                  {
+                    "codigo": "3232",
+                    "titulo": "Clase simulada 3232"
+                  },
+                  {
+                    "codigo": "3233",
+                    "titulo": "Clase simulada 3233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "33",
+            "titulo": "División simulada 33",
+            "grupos": [
+              {
+                "codigo": "331",
+                "titulo": "Grupo simulado 331",
+                "clases": [
+                  {
+                    "codigo": "3311",
+                    "titulo": "Clase simulada 3311"
+                  },
+                  {
+                    "codigo": "3312",
+                    "titulo": "Clase simulada 3312"
+                  },
+                  {
+                    "codigo": "3313",
+                    "titulo": "Clase simulada 3313"
+                  }
+                ]
+              },
+              {
+                "codigo": "332",
+                "titulo": "Grupo simulado 332",
+                "clases": [
+                  {
+                    "codigo": "3321",
+                    "titulo": "Clase simulada 3321"
+                  },
+                  {
+                    "codigo": "3322",
+                    "titulo": "Clase simulada 3322"
+                  },
+                  {
+                    "codigo": "3323",
+                    "titulo": "Clase simulada 3323"
+                  }
+                ]
+              },
+              {
+                "codigo": "333",
+                "titulo": "Grupo simulado 333",
+                "clases": [
+                  {
+                    "codigo": "3331",
+                    "titulo": "Clase simulada 3331"
+                  },
+                  {
+                    "codigo": "3332",
+                    "titulo": "Clase simulada 3332"
+                  },
+                  {
+                    "codigo": "3333",
+                    "titulo": "Clase simulada 3333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "E",
+        "titulo": "Suministro de agua, actividades de saneamiento, gestión de residuos y descontaminación",
+        "divisiones": [
+          {
+            "codigo": "41",
+            "titulo": "División simulada 41",
+            "grupos": [
+              {
+                "codigo": "411",
+                "titulo": "Grupo simulado 411",
+                "clases": [
+                  {
+                    "codigo": "4111",
+                    "titulo": "Clase simulada 4111"
+                  },
+                  {
+                    "codigo": "4112",
+                    "titulo": "Clase simulada 4112"
+                  },
+                  {
+                    "codigo": "4113",
+                    "titulo": "Clase simulada 4113"
+                  }
+                ]
+              },
+              {
+                "codigo": "412",
+                "titulo": "Grupo simulado 412",
+                "clases": [
+                  {
+                    "codigo": "4121",
+                    "titulo": "Clase simulada 4121"
+                  },
+                  {
+                    "codigo": "4122",
+                    "titulo": "Clase simulada 4122"
+                  },
+                  {
+                    "codigo": "4123",
+                    "titulo": "Clase simulada 4123"
+                  }
+                ]
+              },
+              {
+                "codigo": "413",
+                "titulo": "Grupo simulado 413",
+                "clases": [
+                  {
+                    "codigo": "4131",
+                    "titulo": "Clase simulada 4131"
+                  },
+                  {
+                    "codigo": "4132",
+                    "titulo": "Clase simulada 4132"
+                  },
+                  {
+                    "codigo": "4133",
+                    "titulo": "Clase simulada 4133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "42",
+            "titulo": "División simulada 42",
+            "grupos": [
+              {
+                "codigo": "421",
+                "titulo": "Grupo simulado 421",
+                "clases": [
+                  {
+                    "codigo": "4211",
+                    "titulo": "Clase simulada 4211"
+                  },
+                  {
+                    "codigo": "4212",
+                    "titulo": "Clase simulada 4212"
+                  },
+                  {
+                    "codigo": "4213",
+                    "titulo": "Clase simulada 4213"
+                  }
+                ]
+              },
+              {
+                "codigo": "422",
+                "titulo": "Grupo simulado 422",
+                "clases": [
+                  {
+                    "codigo": "4221",
+                    "titulo": "Clase simulada 4221"
+                  },
+                  {
+                    "codigo": "4222",
+                    "titulo": "Clase simulada 4222"
+                  },
+                  {
+                    "codigo": "4223",
+                    "titulo": "Clase simulada 4223"
+                  }
+                ]
+              },
+              {
+                "codigo": "423",
+                "titulo": "Grupo simulado 423",
+                "clases": [
+                  {
+                    "codigo": "4231",
+                    "titulo": "Clase simulada 4231"
+                  },
+                  {
+                    "codigo": "4232",
+                    "titulo": "Clase simulada 4232"
+                  },
+                  {
+                    "codigo": "4233",
+                    "titulo": "Clase simulada 4233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "43",
+            "titulo": "División simulada 43",
+            "grupos": [
+              {
+                "codigo": "431",
+                "titulo": "Grupo simulado 431",
+                "clases": [
+                  {
+                    "codigo": "4311",
+                    "titulo": "Clase simulada 4311"
+                  },
+                  {
+                    "codigo": "4312",
+                    "titulo": "Clase simulada 4312"
+                  },
+                  {
+                    "codigo": "4313",
+                    "titulo": "Clase simulada 4313"
+                  }
+                ]
+              },
+              {
+                "codigo": "432",
+                "titulo": "Grupo simulado 432",
+                "clases": [
+                  {
+                    "codigo": "4321",
+                    "titulo": "Clase simulada 4321"
+                  },
+                  {
+                    "codigo": "4322",
+                    "titulo": "Clase simulada 4322"
+                  },
+                  {
+                    "codigo": "4323",
+                    "titulo": "Clase simulada 4323"
+                  }
+                ]
+              },
+              {
+                "codigo": "433",
+                "titulo": "Grupo simulado 433",
+                "clases": [
+                  {
+                    "codigo": "4331",
+                    "titulo": "Clase simulada 4331"
+                  },
+                  {
+                    "codigo": "4332",
+                    "titulo": "Clase simulada 4332"
+                  },
+                  {
+                    "codigo": "4333",
+                    "titulo": "Clase simulada 4333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "F",
+        "titulo": "Construcción",
+        "divisiones": [
+          {
+            "codigo": "51",
+            "titulo": "División simulada 51",
+            "grupos": [
+              {
+                "codigo": "511",
+                "titulo": "Grupo simulado 511",
+                "clases": [
+                  {
+                    "codigo": "5111",
+                    "titulo": "Clase simulada 5111"
+                  },
+                  {
+                    "codigo": "5112",
+                    "titulo": "Clase simulada 5112"
+                  },
+                  {
+                    "codigo": "5113",
+                    "titulo": "Clase simulada 5113"
+                  }
+                ]
+              },
+              {
+                "codigo": "512",
+                "titulo": "Grupo simulado 512",
+                "clases": [
+                  {
+                    "codigo": "5121",
+                    "titulo": "Clase simulada 5121"
+                  },
+                  {
+                    "codigo": "5122",
+                    "titulo": "Clase simulada 5122"
+                  },
+                  {
+                    "codigo": "5123",
+                    "titulo": "Clase simulada 5123"
+                  }
+                ]
+              },
+              {
+                "codigo": "513",
+                "titulo": "Grupo simulado 513",
+                "clases": [
+                  {
+                    "codigo": "5131",
+                    "titulo": "Clase simulada 5131"
+                  },
+                  {
+                    "codigo": "5132",
+                    "titulo": "Clase simulada 5132"
+                  },
+                  {
+                    "codigo": "5133",
+                    "titulo": "Clase simulada 5133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "52",
+            "titulo": "División simulada 52",
+            "grupos": [
+              {
+                "codigo": "521",
+                "titulo": "Grupo simulado 521",
+                "clases": [
+                  {
+                    "codigo": "5211",
+                    "titulo": "Clase simulada 5211"
+                  },
+                  {
+                    "codigo": "5212",
+                    "titulo": "Clase simulada 5212"
+                  },
+                  {
+                    "codigo": "5213",
+                    "titulo": "Clase simulada 5213"
+                  }
+                ]
+              },
+              {
+                "codigo": "522",
+                "titulo": "Grupo simulado 522",
+                "clases": [
+                  {
+                    "codigo": "5221",
+                    "titulo": "Clase simulada 5221"
+                  },
+                  {
+                    "codigo": "5222",
+                    "titulo": "Clase simulada 5222"
+                  },
+                  {
+                    "codigo": "5223",
+                    "titulo": "Clase simulada 5223"
+                  }
+                ]
+              },
+              {
+                "codigo": "523",
+                "titulo": "Grupo simulado 523",
+                "clases": [
+                  {
+                    "codigo": "5231",
+                    "titulo": "Clase simulada 5231"
+                  },
+                  {
+                    "codigo": "5232",
+                    "titulo": "Clase simulada 5232"
+                  },
+                  {
+                    "codigo": "5233",
+                    "titulo": "Clase simulada 5233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "53",
+            "titulo": "División simulada 53",
+            "grupos": [
+              {
+                "codigo": "531",
+                "titulo": "Grupo simulado 531",
+                "clases": [
+                  {
+                    "codigo": "5311",
+                    "titulo": "Clase simulada 5311"
+                  },
+                  {
+                    "codigo": "5312",
+                    "titulo": "Clase simulada 5312"
+                  },
+                  {
+                    "codigo": "5313",
+                    "titulo": "Clase simulada 5313"
+                  }
+                ]
+              },
+              {
+                "codigo": "532",
+                "titulo": "Grupo simulado 532",
+                "clases": [
+                  {
+                    "codigo": "5321",
+                    "titulo": "Clase simulada 5321"
+                  },
+                  {
+                    "codigo": "5322",
+                    "titulo": "Clase simulada 5322"
+                  },
+                  {
+                    "codigo": "5323",
+                    "titulo": "Clase simulada 5323"
+                  }
+                ]
+              },
+              {
+                "codigo": "533",
+                "titulo": "Grupo simulado 533",
+                "clases": [
+                  {
+                    "codigo": "5331",
+                    "titulo": "Clase simulada 5331"
+                  },
+                  {
+                    "codigo": "5332",
+                    "titulo": "Clase simulada 5332"
+                  },
+                  {
+                    "codigo": "5333",
+                    "titulo": "Clase simulada 5333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "G",
+        "titulo": "Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas",
+        "divisiones": [
+          {
+            "codigo": "61",
+            "titulo": "División simulada 61",
+            "grupos": [
+              {
+                "codigo": "611",
+                "titulo": "Grupo simulado 611",
+                "clases": [
+                  {
+                    "codigo": "6111",
+                    "titulo": "Clase simulada 6111"
+                  },
+                  {
+                    "codigo": "6112",
+                    "titulo": "Clase simulada 6112"
+                  },
+                  {
+                    "codigo": "6113",
+                    "titulo": "Clase simulada 6113"
+                  }
+                ]
+              },
+              {
+                "codigo": "612",
+                "titulo": "Grupo simulado 612",
+                "clases": [
+                  {
+                    "codigo": "6121",
+                    "titulo": "Clase simulada 6121"
+                  },
+                  {
+                    "codigo": "6122",
+                    "titulo": "Clase simulada 6122"
+                  },
+                  {
+                    "codigo": "6123",
+                    "titulo": "Clase simulada 6123"
+                  }
+                ]
+              },
+              {
+                "codigo": "613",
+                "titulo": "Grupo simulado 613",
+                "clases": [
+                  {
+                    "codigo": "6131",
+                    "titulo": "Clase simulada 6131"
+                  },
+                  {
+                    "codigo": "6132",
+                    "titulo": "Clase simulada 6132"
+                  },
+                  {
+                    "codigo": "6133",
+                    "titulo": "Clase simulada 6133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "62",
+            "titulo": "División simulada 62",
+            "grupos": [
+              {
+                "codigo": "621",
+                "titulo": "Grupo simulado 621",
+                "clases": [
+                  {
+                    "codigo": "6211",
+                    "titulo": "Clase simulada 6211"
+                  },
+                  {
+                    "codigo": "6212",
+                    "titulo": "Clase simulada 6212"
+                  },
+                  {
+                    "codigo": "6213",
+                    "titulo": "Clase simulada 6213"
+                  }
+                ]
+              },
+              {
+                "codigo": "622",
+                "titulo": "Grupo simulado 622",
+                "clases": [
+                  {
+                    "codigo": "6221",
+                    "titulo": "Clase simulada 6221"
+                  },
+                  {
+                    "codigo": "6222",
+                    "titulo": "Clase simulada 6222"
+                  },
+                  {
+                    "codigo": "6223",
+                    "titulo": "Clase simulada 6223"
+                  }
+                ]
+              },
+              {
+                "codigo": "623",
+                "titulo": "Grupo simulado 623",
+                "clases": [
+                  {
+                    "codigo": "6231",
+                    "titulo": "Clase simulada 6231"
+                  },
+                  {
+                    "codigo": "6232",
+                    "titulo": "Clase simulada 6232"
+                  },
+                  {
+                    "codigo": "6233",
+                    "titulo": "Clase simulada 6233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "63",
+            "titulo": "División simulada 63",
+            "grupos": [
+              {
+                "codigo": "631",
+                "titulo": "Grupo simulado 631",
+                "clases": [
+                  {
+                    "codigo": "6311",
+                    "titulo": "Clase simulada 6311"
+                  },
+                  {
+                    "codigo": "6312",
+                    "titulo": "Clase simulada 6312"
+                  },
+                  {
+                    "codigo": "6313",
+                    "titulo": "Clase simulada 6313"
+                  }
+                ]
+              },
+              {
+                "codigo": "632",
+                "titulo": "Grupo simulado 632",
+                "clases": [
+                  {
+                    "codigo": "6321",
+                    "titulo": "Clase simulada 6321"
+                  },
+                  {
+                    "codigo": "6322",
+                    "titulo": "Clase simulada 6322"
+                  },
+                  {
+                    "codigo": "6323",
+                    "titulo": "Clase simulada 6323"
+                  }
+                ]
+              },
+              {
+                "codigo": "633",
+                "titulo": "Grupo simulado 633",
+                "clases": [
+                  {
+                    "codigo": "6331",
+                    "titulo": "Clase simulada 6331"
+                  },
+                  {
+                    "codigo": "6332",
+                    "titulo": "Clase simulada 6332"
+                  },
+                  {
+                    "codigo": "6333",
+                    "titulo": "Clase simulada 6333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "H",
+        "titulo": "Transporte y almacenamiento",
+        "divisiones": [
+          {
+            "codigo": "71",
+            "titulo": "División simulada 71",
+            "grupos": [
+              {
+                "codigo": "711",
+                "titulo": "Grupo simulado 711",
+                "clases": [
+                  {
+                    "codigo": "7111",
+                    "titulo": "Clase simulada 7111"
+                  },
+                  {
+                    "codigo": "7112",
+                    "titulo": "Clase simulada 7112"
+                  },
+                  {
+                    "codigo": "7113",
+                    "titulo": "Clase simulada 7113"
+                  }
+                ]
+              },
+              {
+                "codigo": "712",
+                "titulo": "Grupo simulado 712",
+                "clases": [
+                  {
+                    "codigo": "7121",
+                    "titulo": "Clase simulada 7121"
+                  },
+                  {
+                    "codigo": "7122",
+                    "titulo": "Clase simulada 7122"
+                  },
+                  {
+                    "codigo": "7123",
+                    "titulo": "Clase simulada 7123"
+                  }
+                ]
+              },
+              {
+                "codigo": "713",
+                "titulo": "Grupo simulado 713",
+                "clases": [
+                  {
+                    "codigo": "7131",
+                    "titulo": "Clase simulada 7131"
+                  },
+                  {
+                    "codigo": "7132",
+                    "titulo": "Clase simulada 7132"
+                  },
+                  {
+                    "codigo": "7133",
+                    "titulo": "Clase simulada 7133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "72",
+            "titulo": "División simulada 72",
+            "grupos": [
+              {
+                "codigo": "721",
+                "titulo": "Grupo simulado 721",
+                "clases": [
+                  {
+                    "codigo": "7211",
+                    "titulo": "Clase simulada 7211"
+                  },
+                  {
+                    "codigo": "7212",
+                    "titulo": "Clase simulada 7212"
+                  },
+                  {
+                    "codigo": "7213",
+                    "titulo": "Clase simulada 7213"
+                  }
+                ]
+              },
+              {
+                "codigo": "722",
+                "titulo": "Grupo simulado 722",
+                "clases": [
+                  {
+                    "codigo": "7221",
+                    "titulo": "Clase simulada 7221"
+                  },
+                  {
+                    "codigo": "7222",
+                    "titulo": "Clase simulada 7222"
+                  },
+                  {
+                    "codigo": "7223",
+                    "titulo": "Clase simulada 7223"
+                  }
+                ]
+              },
+              {
+                "codigo": "723",
+                "titulo": "Grupo simulado 723",
+                "clases": [
+                  {
+                    "codigo": "7231",
+                    "titulo": "Clase simulada 7231"
+                  },
+                  {
+                    "codigo": "7232",
+                    "titulo": "Clase simulada 7232"
+                  },
+                  {
+                    "codigo": "7233",
+                    "titulo": "Clase simulada 7233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "73",
+            "titulo": "División simulada 73",
+            "grupos": [
+              {
+                "codigo": "731",
+                "titulo": "Grupo simulado 731",
+                "clases": [
+                  {
+                    "codigo": "7311",
+                    "titulo": "Clase simulada 7311"
+                  },
+                  {
+                    "codigo": "7312",
+                    "titulo": "Clase simulada 7312"
+                  },
+                  {
+                    "codigo": "7313",
+                    "titulo": "Clase simulada 7313"
+                  }
+                ]
+              },
+              {
+                "codigo": "732",
+                "titulo": "Grupo simulado 732",
+                "clases": [
+                  {
+                    "codigo": "7321",
+                    "titulo": "Clase simulada 7321"
+                  },
+                  {
+                    "codigo": "7322",
+                    "titulo": "Clase simulada 7322"
+                  },
+                  {
+                    "codigo": "7323",
+                    "titulo": "Clase simulada 7323"
+                  }
+                ]
+              },
+              {
+                "codigo": "733",
+                "titulo": "Grupo simulado 733",
+                "clases": [
+                  {
+                    "codigo": "7331",
+                    "titulo": "Clase simulada 7331"
+                  },
+                  {
+                    "codigo": "7332",
+                    "titulo": "Clase simulada 7332"
+                  },
+                  {
+                    "codigo": "7333",
+                    "titulo": "Clase simulada 7333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "I",
+        "titulo": "Hostelería",
+        "divisiones": [
+          {
+            "codigo": "81",
+            "titulo": "División simulada 81",
+            "grupos": [
+              {
+                "codigo": "811",
+                "titulo": "Grupo simulado 811",
+                "clases": [
+                  {
+                    "codigo": "8111",
+                    "titulo": "Clase simulada 8111"
+                  },
+                  {
+                    "codigo": "8112",
+                    "titulo": "Clase simulada 8112"
+                  },
+                  {
+                    "codigo": "8113",
+                    "titulo": "Clase simulada 8113"
+                  }
+                ]
+              },
+              {
+                "codigo": "812",
+                "titulo": "Grupo simulado 812",
+                "clases": [
+                  {
+                    "codigo": "8121",
+                    "titulo": "Clase simulada 8121"
+                  },
+                  {
+                    "codigo": "8122",
+                    "titulo": "Clase simulada 8122"
+                  },
+                  {
+                    "codigo": "8123",
+                    "titulo": "Clase simulada 8123"
+                  }
+                ]
+              },
+              {
+                "codigo": "813",
+                "titulo": "Grupo simulado 813",
+                "clases": [
+                  {
+                    "codigo": "8131",
+                    "titulo": "Clase simulada 8131"
+                  },
+                  {
+                    "codigo": "8132",
+                    "titulo": "Clase simulada 8132"
+                  },
+                  {
+                    "codigo": "8133",
+                    "titulo": "Clase simulada 8133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "82",
+            "titulo": "División simulada 82",
+            "grupos": [
+              {
+                "codigo": "821",
+                "titulo": "Grupo simulado 821",
+                "clases": [
+                  {
+                    "codigo": "8211",
+                    "titulo": "Clase simulada 8211"
+                  },
+                  {
+                    "codigo": "8212",
+                    "titulo": "Clase simulada 8212"
+                  },
+                  {
+                    "codigo": "8213",
+                    "titulo": "Clase simulada 8213"
+                  }
+                ]
+              },
+              {
+                "codigo": "822",
+                "titulo": "Grupo simulado 822",
+                "clases": [
+                  {
+                    "codigo": "8221",
+                    "titulo": "Clase simulada 8221"
+                  },
+                  {
+                    "codigo": "8222",
+                    "titulo": "Clase simulada 8222"
+                  },
+                  {
+                    "codigo": "8223",
+                    "titulo": "Clase simulada 8223"
+                  }
+                ]
+              },
+              {
+                "codigo": "823",
+                "titulo": "Grupo simulado 823",
+                "clases": [
+                  {
+                    "codigo": "8231",
+                    "titulo": "Clase simulada 8231"
+                  },
+                  {
+                    "codigo": "8232",
+                    "titulo": "Clase simulada 8232"
+                  },
+                  {
+                    "codigo": "8233",
+                    "titulo": "Clase simulada 8233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "83",
+            "titulo": "División simulada 83",
+            "grupos": [
+              {
+                "codigo": "831",
+                "titulo": "Grupo simulado 831",
+                "clases": [
+                  {
+                    "codigo": "8311",
+                    "titulo": "Clase simulada 8311"
+                  },
+                  {
+                    "codigo": "8312",
+                    "titulo": "Clase simulada 8312"
+                  },
+                  {
+                    "codigo": "8313",
+                    "titulo": "Clase simulada 8313"
+                  }
+                ]
+              },
+              {
+                "codigo": "832",
+                "titulo": "Grupo simulado 832",
+                "clases": [
+                  {
+                    "codigo": "8321",
+                    "titulo": "Clase simulada 8321"
+                  },
+                  {
+                    "codigo": "8322",
+                    "titulo": "Clase simulada 8322"
+                  },
+                  {
+                    "codigo": "8323",
+                    "titulo": "Clase simulada 8323"
+                  }
+                ]
+              },
+              {
+                "codigo": "833",
+                "titulo": "Grupo simulado 833",
+                "clases": [
+                  {
+                    "codigo": "8331",
+                    "titulo": "Clase simulada 8331"
+                  },
+                  {
+                    "codigo": "8332",
+                    "titulo": "Clase simulada 8332"
+                  },
+                  {
+                    "codigo": "8333",
+                    "titulo": "Clase simulada 8333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "J",
+        "titulo": "Información y comunicaciones",
+        "divisiones": [
+          {
+            "codigo": "91",
+            "titulo": "División simulada 91",
+            "grupos": [
+              {
+                "codigo": "911",
+                "titulo": "Grupo simulado 911",
+                "clases": [
+                  {
+                    "codigo": "9111",
+                    "titulo": "Clase simulada 9111"
+                  },
+                  {
+                    "codigo": "9112",
+                    "titulo": "Clase simulada 9112"
+                  },
+                  {
+                    "codigo": "9113",
+                    "titulo": "Clase simulada 9113"
+                  }
+                ]
+              },
+              {
+                "codigo": "912",
+                "titulo": "Grupo simulado 912",
+                "clases": [
+                  {
+                    "codigo": "9121",
+                    "titulo": "Clase simulada 9121"
+                  },
+                  {
+                    "codigo": "9122",
+                    "titulo": "Clase simulada 9122"
+                  },
+                  {
+                    "codigo": "9123",
+                    "titulo": "Clase simulada 9123"
+                  }
+                ]
+              },
+              {
+                "codigo": "913",
+                "titulo": "Grupo simulado 913",
+                "clases": [
+                  {
+                    "codigo": "9131",
+                    "titulo": "Clase simulada 9131"
+                  },
+                  {
+                    "codigo": "9132",
+                    "titulo": "Clase simulada 9132"
+                  },
+                  {
+                    "codigo": "9133",
+                    "titulo": "Clase simulada 9133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "92",
+            "titulo": "División simulada 92",
+            "grupos": [
+              {
+                "codigo": "921",
+                "titulo": "Grupo simulado 921",
+                "clases": [
+                  {
+                    "codigo": "9211",
+                    "titulo": "Clase simulada 9211"
+                  },
+                  {
+                    "codigo": "9212",
+                    "titulo": "Clase simulada 9212"
+                  },
+                  {
+                    "codigo": "9213",
+                    "titulo": "Clase simulada 9213"
+                  }
+                ]
+              },
+              {
+                "codigo": "922",
+                "titulo": "Grupo simulado 922",
+                "clases": [
+                  {
+                    "codigo": "9221",
+                    "titulo": "Clase simulada 9221"
+                  },
+                  {
+                    "codigo": "9222",
+                    "titulo": "Clase simulada 9222"
+                  },
+                  {
+                    "codigo": "9223",
+                    "titulo": "Clase simulada 9223"
+                  }
+                ]
+              },
+              {
+                "codigo": "923",
+                "titulo": "Grupo simulado 923",
+                "clases": [
+                  {
+                    "codigo": "9231",
+                    "titulo": "Clase simulada 9231"
+                  },
+                  {
+                    "codigo": "9232",
+                    "titulo": "Clase simulada 9232"
+                  },
+                  {
+                    "codigo": "9233",
+                    "titulo": "Clase simulada 9233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "93",
+            "titulo": "División simulada 93",
+            "grupos": [
+              {
+                "codigo": "931",
+                "titulo": "Grupo simulado 931",
+                "clases": [
+                  {
+                    "codigo": "9311",
+                    "titulo": "Clase simulada 9311"
+                  },
+                  {
+                    "codigo": "9312",
+                    "titulo": "Clase simulada 9312"
+                  },
+                  {
+                    "codigo": "9313",
+                    "titulo": "Clase simulada 9313"
+                  }
+                ]
+              },
+              {
+                "codigo": "932",
+                "titulo": "Grupo simulado 932",
+                "clases": [
+                  {
+                    "codigo": "9321",
+                    "titulo": "Clase simulada 9321"
+                  },
+                  {
+                    "codigo": "9322",
+                    "titulo": "Clase simulada 9322"
+                  },
+                  {
+                    "codigo": "9323",
+                    "titulo": "Clase simulada 9323"
+                  }
+                ]
+              },
+              {
+                "codigo": "933",
+                "titulo": "Grupo simulado 933",
+                "clases": [
+                  {
+                    "codigo": "9331",
+                    "titulo": "Clase simulada 9331"
+                  },
+                  {
+                    "codigo": "9332",
+                    "titulo": "Clase simulada 9332"
+                  },
+                  {
+                    "codigo": "9333",
+                    "titulo": "Clase simulada 9333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "K",
+        "titulo": "Actividades financieras y de seguros",
+        "divisiones": [
+          {
+            "codigo": "101",
+            "titulo": "División simulada 101",
+            "grupos": [
+              {
+                "codigo": "1011",
+                "titulo": "Grupo simulado 1011",
+                "clases": [
+                  {
+                    "codigo": "10111",
+                    "titulo": "Clase simulada 10111"
+                  },
+                  {
+                    "codigo": "10112",
+                    "titulo": "Clase simulada 10112"
+                  },
+                  {
+                    "codigo": "10113",
+                    "titulo": "Clase simulada 10113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1012",
+                "titulo": "Grupo simulado 1012",
+                "clases": [
+                  {
+                    "codigo": "10121",
+                    "titulo": "Clase simulada 10121"
+                  },
+                  {
+                    "codigo": "10122",
+                    "titulo": "Clase simulada 10122"
+                  },
+                  {
+                    "codigo": "10123",
+                    "titulo": "Clase simulada 10123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1013",
+                "titulo": "Grupo simulado 1013",
+                "clases": [
+                  {
+                    "codigo": "10131",
+                    "titulo": "Clase simulada 10131"
+                  },
+                  {
+                    "codigo": "10132",
+                    "titulo": "Clase simulada 10132"
+                  },
+                  {
+                    "codigo": "10133",
+                    "titulo": "Clase simulada 10133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "102",
+            "titulo": "División simulada 102",
+            "grupos": [
+              {
+                "codigo": "1021",
+                "titulo": "Grupo simulado 1021",
+                "clases": [
+                  {
+                    "codigo": "10211",
+                    "titulo": "Clase simulada 10211"
+                  },
+                  {
+                    "codigo": "10212",
+                    "titulo": "Clase simulada 10212"
+                  },
+                  {
+                    "codigo": "10213",
+                    "titulo": "Clase simulada 10213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1022",
+                "titulo": "Grupo simulado 1022",
+                "clases": [
+                  {
+                    "codigo": "10221",
+                    "titulo": "Clase simulada 10221"
+                  },
+                  {
+                    "codigo": "10222",
+                    "titulo": "Clase simulada 10222"
+                  },
+                  {
+                    "codigo": "10223",
+                    "titulo": "Clase simulada 10223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1023",
+                "titulo": "Grupo simulado 1023",
+                "clases": [
+                  {
+                    "codigo": "10231",
+                    "titulo": "Clase simulada 10231"
+                  },
+                  {
+                    "codigo": "10232",
+                    "titulo": "Clase simulada 10232"
+                  },
+                  {
+                    "codigo": "10233",
+                    "titulo": "Clase simulada 10233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "103",
+            "titulo": "División simulada 103",
+            "grupos": [
+              {
+                "codigo": "1031",
+                "titulo": "Grupo simulado 1031",
+                "clases": [
+                  {
+                    "codigo": "10311",
+                    "titulo": "Clase simulada 10311"
+                  },
+                  {
+                    "codigo": "10312",
+                    "titulo": "Clase simulada 10312"
+                  },
+                  {
+                    "codigo": "10313",
+                    "titulo": "Clase simulada 10313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1032",
+                "titulo": "Grupo simulado 1032",
+                "clases": [
+                  {
+                    "codigo": "10321",
+                    "titulo": "Clase simulada 10321"
+                  },
+                  {
+                    "codigo": "10322",
+                    "titulo": "Clase simulada 10322"
+                  },
+                  {
+                    "codigo": "10323",
+                    "titulo": "Clase simulada 10323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1033",
+                "titulo": "Grupo simulado 1033",
+                "clases": [
+                  {
+                    "codigo": "10331",
+                    "titulo": "Clase simulada 10331"
+                  },
+                  {
+                    "codigo": "10332",
+                    "titulo": "Clase simulada 10332"
+                  },
+                  {
+                    "codigo": "10333",
+                    "titulo": "Clase simulada 10333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "L",
+        "titulo": "Actividades inmobiliarias",
+        "divisiones": [
+          {
+            "codigo": "111",
+            "titulo": "División simulada 111",
+            "grupos": [
+              {
+                "codigo": "1111",
+                "titulo": "Grupo simulado 1111",
+                "clases": [
+                  {
+                    "codigo": "11111",
+                    "titulo": "Clase simulada 11111"
+                  },
+                  {
+                    "codigo": "11112",
+                    "titulo": "Clase simulada 11112"
+                  },
+                  {
+                    "codigo": "11113",
+                    "titulo": "Clase simulada 11113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1112",
+                "titulo": "Grupo simulado 1112",
+                "clases": [
+                  {
+                    "codigo": "11121",
+                    "titulo": "Clase simulada 11121"
+                  },
+                  {
+                    "codigo": "11122",
+                    "titulo": "Clase simulada 11122"
+                  },
+                  {
+                    "codigo": "11123",
+                    "titulo": "Clase simulada 11123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1113",
+                "titulo": "Grupo simulado 1113",
+                "clases": [
+                  {
+                    "codigo": "11131",
+                    "titulo": "Clase simulada 11131"
+                  },
+                  {
+                    "codigo": "11132",
+                    "titulo": "Clase simulada 11132"
+                  },
+                  {
+                    "codigo": "11133",
+                    "titulo": "Clase simulada 11133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "112",
+            "titulo": "División simulada 112",
+            "grupos": [
+              {
+                "codigo": "1121",
+                "titulo": "Grupo simulado 1121",
+                "clases": [
+                  {
+                    "codigo": "11211",
+                    "titulo": "Clase simulada 11211"
+                  },
+                  {
+                    "codigo": "11212",
+                    "titulo": "Clase simulada 11212"
+                  },
+                  {
+                    "codigo": "11213",
+                    "titulo": "Clase simulada 11213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1122",
+                "titulo": "Grupo simulado 1122",
+                "clases": [
+                  {
+                    "codigo": "11221",
+                    "titulo": "Clase simulada 11221"
+                  },
+                  {
+                    "codigo": "11222",
+                    "titulo": "Clase simulada 11222"
+                  },
+                  {
+                    "codigo": "11223",
+                    "titulo": "Clase simulada 11223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1123",
+                "titulo": "Grupo simulado 1123",
+                "clases": [
+                  {
+                    "codigo": "11231",
+                    "titulo": "Clase simulada 11231"
+                  },
+                  {
+                    "codigo": "11232",
+                    "titulo": "Clase simulada 11232"
+                  },
+                  {
+                    "codigo": "11233",
+                    "titulo": "Clase simulada 11233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "113",
+            "titulo": "División simulada 113",
+            "grupos": [
+              {
+                "codigo": "1131",
+                "titulo": "Grupo simulado 1131",
+                "clases": [
+                  {
+                    "codigo": "11311",
+                    "titulo": "Clase simulada 11311"
+                  },
+                  {
+                    "codigo": "11312",
+                    "titulo": "Clase simulada 11312"
+                  },
+                  {
+                    "codigo": "11313",
+                    "titulo": "Clase simulada 11313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1132",
+                "titulo": "Grupo simulado 1132",
+                "clases": [
+                  {
+                    "codigo": "11321",
+                    "titulo": "Clase simulada 11321"
+                  },
+                  {
+                    "codigo": "11322",
+                    "titulo": "Clase simulada 11322"
+                  },
+                  {
+                    "codigo": "11323",
+                    "titulo": "Clase simulada 11323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1133",
+                "titulo": "Grupo simulado 1133",
+                "clases": [
+                  {
+                    "codigo": "11331",
+                    "titulo": "Clase simulada 11331"
+                  },
+                  {
+                    "codigo": "11332",
+                    "titulo": "Clase simulada 11332"
+                  },
+                  {
+                    "codigo": "11333",
+                    "titulo": "Clase simulada 11333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "M",
+        "titulo": "Actividades profesionales, científicas y técnicas",
+        "divisiones": [
+          {
+            "codigo": "121",
+            "titulo": "División simulada 121",
+            "grupos": [
+              {
+                "codigo": "1211",
+                "titulo": "Grupo simulado 1211",
+                "clases": [
+                  {
+                    "codigo": "12111",
+                    "titulo": "Clase simulada 12111"
+                  },
+                  {
+                    "codigo": "12112",
+                    "titulo": "Clase simulada 12112"
+                  },
+                  {
+                    "codigo": "12113",
+                    "titulo": "Clase simulada 12113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1212",
+                "titulo": "Grupo simulado 1212",
+                "clases": [
+                  {
+                    "codigo": "12121",
+                    "titulo": "Clase simulada 12121"
+                  },
+                  {
+                    "codigo": "12122",
+                    "titulo": "Clase simulada 12122"
+                  },
+                  {
+                    "codigo": "12123",
+                    "titulo": "Clase simulada 12123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1213",
+                "titulo": "Grupo simulado 1213",
+                "clases": [
+                  {
+                    "codigo": "12131",
+                    "titulo": "Clase simulada 12131"
+                  },
+                  {
+                    "codigo": "12132",
+                    "titulo": "Clase simulada 12132"
+                  },
+                  {
+                    "codigo": "12133",
+                    "titulo": "Clase simulada 12133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "122",
+            "titulo": "División simulada 122",
+            "grupos": [
+              {
+                "codigo": "1221",
+                "titulo": "Grupo simulado 1221",
+                "clases": [
+                  {
+                    "codigo": "12211",
+                    "titulo": "Clase simulada 12211"
+                  },
+                  {
+                    "codigo": "12212",
+                    "titulo": "Clase simulada 12212"
+                  },
+                  {
+                    "codigo": "12213",
+                    "titulo": "Clase simulada 12213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1222",
+                "titulo": "Grupo simulado 1222",
+                "clases": [
+                  {
+                    "codigo": "12221",
+                    "titulo": "Clase simulada 12221"
+                  },
+                  {
+                    "codigo": "12222",
+                    "titulo": "Clase simulada 12222"
+                  },
+                  {
+                    "codigo": "12223",
+                    "titulo": "Clase simulada 12223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1223",
+                "titulo": "Grupo simulado 1223",
+                "clases": [
+                  {
+                    "codigo": "12231",
+                    "titulo": "Clase simulada 12231"
+                  },
+                  {
+                    "codigo": "12232",
+                    "titulo": "Clase simulada 12232"
+                  },
+                  {
+                    "codigo": "12233",
+                    "titulo": "Clase simulada 12233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "123",
+            "titulo": "División simulada 123",
+            "grupos": [
+              {
+                "codigo": "1231",
+                "titulo": "Grupo simulado 1231",
+                "clases": [
+                  {
+                    "codigo": "12311",
+                    "titulo": "Clase simulada 12311"
+                  },
+                  {
+                    "codigo": "12312",
+                    "titulo": "Clase simulada 12312"
+                  },
+                  {
+                    "codigo": "12313",
+                    "titulo": "Clase simulada 12313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1232",
+                "titulo": "Grupo simulado 1232",
+                "clases": [
+                  {
+                    "codigo": "12321",
+                    "titulo": "Clase simulada 12321"
+                  },
+                  {
+                    "codigo": "12322",
+                    "titulo": "Clase simulada 12322"
+                  },
+                  {
+                    "codigo": "12323",
+                    "titulo": "Clase simulada 12323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1233",
+                "titulo": "Grupo simulado 1233",
+                "clases": [
+                  {
+                    "codigo": "12331",
+                    "titulo": "Clase simulada 12331"
+                  },
+                  {
+                    "codigo": "12332",
+                    "titulo": "Clase simulada 12332"
+                  },
+                  {
+                    "codigo": "12333",
+                    "titulo": "Clase simulada 12333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "N",
+        "titulo": "Actividades administrativas y servicios auxiliares",
+        "divisiones": [
+          {
+            "codigo": "131",
+            "titulo": "División simulada 131",
+            "grupos": [
+              {
+                "codigo": "1311",
+                "titulo": "Grupo simulado 1311",
+                "clases": [
+                  {
+                    "codigo": "13111",
+                    "titulo": "Clase simulada 13111"
+                  },
+                  {
+                    "codigo": "13112",
+                    "titulo": "Clase simulada 13112"
+                  },
+                  {
+                    "codigo": "13113",
+                    "titulo": "Clase simulada 13113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1312",
+                "titulo": "Grupo simulado 1312",
+                "clases": [
+                  {
+                    "codigo": "13121",
+                    "titulo": "Clase simulada 13121"
+                  },
+                  {
+                    "codigo": "13122",
+                    "titulo": "Clase simulada 13122"
+                  },
+                  {
+                    "codigo": "13123",
+                    "titulo": "Clase simulada 13123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1313",
+                "titulo": "Grupo simulado 1313",
+                "clases": [
+                  {
+                    "codigo": "13131",
+                    "titulo": "Clase simulada 13131"
+                  },
+                  {
+                    "codigo": "13132",
+                    "titulo": "Clase simulada 13132"
+                  },
+                  {
+                    "codigo": "13133",
+                    "titulo": "Clase simulada 13133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "132",
+            "titulo": "División simulada 132",
+            "grupos": [
+              {
+                "codigo": "1321",
+                "titulo": "Grupo simulado 1321",
+                "clases": [
+                  {
+                    "codigo": "13211",
+                    "titulo": "Clase simulada 13211"
+                  },
+                  {
+                    "codigo": "13212",
+                    "titulo": "Clase simulada 13212"
+                  },
+                  {
+                    "codigo": "13213",
+                    "titulo": "Clase simulada 13213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1322",
+                "titulo": "Grupo simulado 1322",
+                "clases": [
+                  {
+                    "codigo": "13221",
+                    "titulo": "Clase simulada 13221"
+                  },
+                  {
+                    "codigo": "13222",
+                    "titulo": "Clase simulada 13222"
+                  },
+                  {
+                    "codigo": "13223",
+                    "titulo": "Clase simulada 13223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1323",
+                "titulo": "Grupo simulado 1323",
+                "clases": [
+                  {
+                    "codigo": "13231",
+                    "titulo": "Clase simulada 13231"
+                  },
+                  {
+                    "codigo": "13232",
+                    "titulo": "Clase simulada 13232"
+                  },
+                  {
+                    "codigo": "13233",
+                    "titulo": "Clase simulada 13233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "133",
+            "titulo": "División simulada 133",
+            "grupos": [
+              {
+                "codigo": "1331",
+                "titulo": "Grupo simulado 1331",
+                "clases": [
+                  {
+                    "codigo": "13311",
+                    "titulo": "Clase simulada 13311"
+                  },
+                  {
+                    "codigo": "13312",
+                    "titulo": "Clase simulada 13312"
+                  },
+                  {
+                    "codigo": "13313",
+                    "titulo": "Clase simulada 13313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1332",
+                "titulo": "Grupo simulado 1332",
+                "clases": [
+                  {
+                    "codigo": "13321",
+                    "titulo": "Clase simulada 13321"
+                  },
+                  {
+                    "codigo": "13322",
+                    "titulo": "Clase simulada 13322"
+                  },
+                  {
+                    "codigo": "13323",
+                    "titulo": "Clase simulada 13323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1333",
+                "titulo": "Grupo simulado 1333",
+                "clases": [
+                  {
+                    "codigo": "13331",
+                    "titulo": "Clase simulada 13331"
+                  },
+                  {
+                    "codigo": "13332",
+                    "titulo": "Clase simulada 13332"
+                  },
+                  {
+                    "codigo": "13333",
+                    "titulo": "Clase simulada 13333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "O",
+        "titulo": "Administración pública y defensa; seguridad social obligatoria",
+        "divisiones": [
+          {
+            "codigo": "141",
+            "titulo": "División simulada 141",
+            "grupos": [
+              {
+                "codigo": "1411",
+                "titulo": "Grupo simulado 1411",
+                "clases": [
+                  {
+                    "codigo": "14111",
+                    "titulo": "Clase simulada 14111"
+                  },
+                  {
+                    "codigo": "14112",
+                    "titulo": "Clase simulada 14112"
+                  },
+                  {
+                    "codigo": "14113",
+                    "titulo": "Clase simulada 14113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1412",
+                "titulo": "Grupo simulado 1412",
+                "clases": [
+                  {
+                    "codigo": "14121",
+                    "titulo": "Clase simulada 14121"
+                  },
+                  {
+                    "codigo": "14122",
+                    "titulo": "Clase simulada 14122"
+                  },
+                  {
+                    "codigo": "14123",
+                    "titulo": "Clase simulada 14123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1413",
+                "titulo": "Grupo simulado 1413",
+                "clases": [
+                  {
+                    "codigo": "14131",
+                    "titulo": "Clase simulada 14131"
+                  },
+                  {
+                    "codigo": "14132",
+                    "titulo": "Clase simulada 14132"
+                  },
+                  {
+                    "codigo": "14133",
+                    "titulo": "Clase simulada 14133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "142",
+            "titulo": "División simulada 142",
+            "grupos": [
+              {
+                "codigo": "1421",
+                "titulo": "Grupo simulado 1421",
+                "clases": [
+                  {
+                    "codigo": "14211",
+                    "titulo": "Clase simulada 14211"
+                  },
+                  {
+                    "codigo": "14212",
+                    "titulo": "Clase simulada 14212"
+                  },
+                  {
+                    "codigo": "14213",
+                    "titulo": "Clase simulada 14213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1422",
+                "titulo": "Grupo simulado 1422",
+                "clases": [
+                  {
+                    "codigo": "14221",
+                    "titulo": "Clase simulada 14221"
+                  },
+                  {
+                    "codigo": "14222",
+                    "titulo": "Clase simulada 14222"
+                  },
+                  {
+                    "codigo": "14223",
+                    "titulo": "Clase simulada 14223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1423",
+                "titulo": "Grupo simulado 1423",
+                "clases": [
+                  {
+                    "codigo": "14231",
+                    "titulo": "Clase simulada 14231"
+                  },
+                  {
+                    "codigo": "14232",
+                    "titulo": "Clase simulada 14232"
+                  },
+                  {
+                    "codigo": "14233",
+                    "titulo": "Clase simulada 14233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "143",
+            "titulo": "División simulada 143",
+            "grupos": [
+              {
+                "codigo": "1431",
+                "titulo": "Grupo simulado 1431",
+                "clases": [
+                  {
+                    "codigo": "14311",
+                    "titulo": "Clase simulada 14311"
+                  },
+                  {
+                    "codigo": "14312",
+                    "titulo": "Clase simulada 14312"
+                  },
+                  {
+                    "codigo": "14313",
+                    "titulo": "Clase simulada 14313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1432",
+                "titulo": "Grupo simulado 1432",
+                "clases": [
+                  {
+                    "codigo": "14321",
+                    "titulo": "Clase simulada 14321"
+                  },
+                  {
+                    "codigo": "14322",
+                    "titulo": "Clase simulada 14322"
+                  },
+                  {
+                    "codigo": "14323",
+                    "titulo": "Clase simulada 14323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1433",
+                "titulo": "Grupo simulado 1433",
+                "clases": [
+                  {
+                    "codigo": "14331",
+                    "titulo": "Clase simulada 14331"
+                  },
+                  {
+                    "codigo": "14332",
+                    "titulo": "Clase simulada 14332"
+                  },
+                  {
+                    "codigo": "14333",
+                    "titulo": "Clase simulada 14333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "P",
+        "titulo": "Educación",
+        "divisiones": [
+          {
+            "codigo": "151",
+            "titulo": "División simulada 151",
+            "grupos": [
+              {
+                "codigo": "1511",
+                "titulo": "Grupo simulado 1511",
+                "clases": [
+                  {
+                    "codigo": "15111",
+                    "titulo": "Clase simulada 15111"
+                  },
+                  {
+                    "codigo": "15112",
+                    "titulo": "Clase simulada 15112"
+                  },
+                  {
+                    "codigo": "15113",
+                    "titulo": "Clase simulada 15113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1512",
+                "titulo": "Grupo simulado 1512",
+                "clases": [
+                  {
+                    "codigo": "15121",
+                    "titulo": "Clase simulada 15121"
+                  },
+                  {
+                    "codigo": "15122",
+                    "titulo": "Clase simulada 15122"
+                  },
+                  {
+                    "codigo": "15123",
+                    "titulo": "Clase simulada 15123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1513",
+                "titulo": "Grupo simulado 1513",
+                "clases": [
+                  {
+                    "codigo": "15131",
+                    "titulo": "Clase simulada 15131"
+                  },
+                  {
+                    "codigo": "15132",
+                    "titulo": "Clase simulada 15132"
+                  },
+                  {
+                    "codigo": "15133",
+                    "titulo": "Clase simulada 15133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "152",
+            "titulo": "División simulada 152",
+            "grupos": [
+              {
+                "codigo": "1521",
+                "titulo": "Grupo simulado 1521",
+                "clases": [
+                  {
+                    "codigo": "15211",
+                    "titulo": "Clase simulada 15211"
+                  },
+                  {
+                    "codigo": "15212",
+                    "titulo": "Clase simulada 15212"
+                  },
+                  {
+                    "codigo": "15213",
+                    "titulo": "Clase simulada 15213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1522",
+                "titulo": "Grupo simulado 1522",
+                "clases": [
+                  {
+                    "codigo": "15221",
+                    "titulo": "Clase simulada 15221"
+                  },
+                  {
+                    "codigo": "15222",
+                    "titulo": "Clase simulada 15222"
+                  },
+                  {
+                    "codigo": "15223",
+                    "titulo": "Clase simulada 15223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1523",
+                "titulo": "Grupo simulado 1523",
+                "clases": [
+                  {
+                    "codigo": "15231",
+                    "titulo": "Clase simulada 15231"
+                  },
+                  {
+                    "codigo": "15232",
+                    "titulo": "Clase simulada 15232"
+                  },
+                  {
+                    "codigo": "15233",
+                    "titulo": "Clase simulada 15233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "153",
+            "titulo": "División simulada 153",
+            "grupos": [
+              {
+                "codigo": "1531",
+                "titulo": "Grupo simulado 1531",
+                "clases": [
+                  {
+                    "codigo": "15311",
+                    "titulo": "Clase simulada 15311"
+                  },
+                  {
+                    "codigo": "15312",
+                    "titulo": "Clase simulada 15312"
+                  },
+                  {
+                    "codigo": "15313",
+                    "titulo": "Clase simulada 15313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1532",
+                "titulo": "Grupo simulado 1532",
+                "clases": [
+                  {
+                    "codigo": "15321",
+                    "titulo": "Clase simulada 15321"
+                  },
+                  {
+                    "codigo": "15322",
+                    "titulo": "Clase simulada 15322"
+                  },
+                  {
+                    "codigo": "15323",
+                    "titulo": "Clase simulada 15323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1533",
+                "titulo": "Grupo simulado 1533",
+                "clases": [
+                  {
+                    "codigo": "15331",
+                    "titulo": "Clase simulada 15331"
+                  },
+                  {
+                    "codigo": "15332",
+                    "titulo": "Clase simulada 15332"
+                  },
+                  {
+                    "codigo": "15333",
+                    "titulo": "Clase simulada 15333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "Q",
+        "titulo": "Actividades sanitarias y de servicios sociales",
+        "divisiones": [
+          {
+            "codigo": "161",
+            "titulo": "División simulada 161",
+            "grupos": [
+              {
+                "codigo": "1611",
+                "titulo": "Grupo simulado 1611",
+                "clases": [
+                  {
+                    "codigo": "16111",
+                    "titulo": "Clase simulada 16111"
+                  },
+                  {
+                    "codigo": "16112",
+                    "titulo": "Clase simulada 16112"
+                  },
+                  {
+                    "codigo": "16113",
+                    "titulo": "Clase simulada 16113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1612",
+                "titulo": "Grupo simulado 1612",
+                "clases": [
+                  {
+                    "codigo": "16121",
+                    "titulo": "Clase simulada 16121"
+                  },
+                  {
+                    "codigo": "16122",
+                    "titulo": "Clase simulada 16122"
+                  },
+                  {
+                    "codigo": "16123",
+                    "titulo": "Clase simulada 16123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1613",
+                "titulo": "Grupo simulado 1613",
+                "clases": [
+                  {
+                    "codigo": "16131",
+                    "titulo": "Clase simulada 16131"
+                  },
+                  {
+                    "codigo": "16132",
+                    "titulo": "Clase simulada 16132"
+                  },
+                  {
+                    "codigo": "16133",
+                    "titulo": "Clase simulada 16133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "162",
+            "titulo": "División simulada 162",
+            "grupos": [
+              {
+                "codigo": "1621",
+                "titulo": "Grupo simulado 1621",
+                "clases": [
+                  {
+                    "codigo": "16211",
+                    "titulo": "Clase simulada 16211"
+                  },
+                  {
+                    "codigo": "16212",
+                    "titulo": "Clase simulada 16212"
+                  },
+                  {
+                    "codigo": "16213",
+                    "titulo": "Clase simulada 16213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1622",
+                "titulo": "Grupo simulado 1622",
+                "clases": [
+                  {
+                    "codigo": "16221",
+                    "titulo": "Clase simulada 16221"
+                  },
+                  {
+                    "codigo": "16222",
+                    "titulo": "Clase simulada 16222"
+                  },
+                  {
+                    "codigo": "16223",
+                    "titulo": "Clase simulada 16223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1623",
+                "titulo": "Grupo simulado 1623",
+                "clases": [
+                  {
+                    "codigo": "16231",
+                    "titulo": "Clase simulada 16231"
+                  },
+                  {
+                    "codigo": "16232",
+                    "titulo": "Clase simulada 16232"
+                  },
+                  {
+                    "codigo": "16233",
+                    "titulo": "Clase simulada 16233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "163",
+            "titulo": "División simulada 163",
+            "grupos": [
+              {
+                "codigo": "1631",
+                "titulo": "Grupo simulado 1631",
+                "clases": [
+                  {
+                    "codigo": "16311",
+                    "titulo": "Clase simulada 16311"
+                  },
+                  {
+                    "codigo": "16312",
+                    "titulo": "Clase simulada 16312"
+                  },
+                  {
+                    "codigo": "16313",
+                    "titulo": "Clase simulada 16313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1632",
+                "titulo": "Grupo simulado 1632",
+                "clases": [
+                  {
+                    "codigo": "16321",
+                    "titulo": "Clase simulada 16321"
+                  },
+                  {
+                    "codigo": "16322",
+                    "titulo": "Clase simulada 16322"
+                  },
+                  {
+                    "codigo": "16323",
+                    "titulo": "Clase simulada 16323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1633",
+                "titulo": "Grupo simulado 1633",
+                "clases": [
+                  {
+                    "codigo": "16331",
+                    "titulo": "Clase simulada 16331"
+                  },
+                  {
+                    "codigo": "16332",
+                    "titulo": "Clase simulada 16332"
+                  },
+                  {
+                    "codigo": "16333",
+                    "titulo": "Clase simulada 16333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "R",
+        "titulo": "Actividades artísticas, recreativas y de entretenimiento",
+        "divisiones": [
+          {
+            "codigo": "171",
+            "titulo": "División simulada 171",
+            "grupos": [
+              {
+                "codigo": "1711",
+                "titulo": "Grupo simulado 1711",
+                "clases": [
+                  {
+                    "codigo": "17111",
+                    "titulo": "Clase simulada 17111"
+                  },
+                  {
+                    "codigo": "17112",
+                    "titulo": "Clase simulada 17112"
+                  },
+                  {
+                    "codigo": "17113",
+                    "titulo": "Clase simulada 17113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1712",
+                "titulo": "Grupo simulado 1712",
+                "clases": [
+                  {
+                    "codigo": "17121",
+                    "titulo": "Clase simulada 17121"
+                  },
+                  {
+                    "codigo": "17122",
+                    "titulo": "Clase simulada 17122"
+                  },
+                  {
+                    "codigo": "17123",
+                    "titulo": "Clase simulada 17123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1713",
+                "titulo": "Grupo simulado 1713",
+                "clases": [
+                  {
+                    "codigo": "17131",
+                    "titulo": "Clase simulada 17131"
+                  },
+                  {
+                    "codigo": "17132",
+                    "titulo": "Clase simulada 17132"
+                  },
+                  {
+                    "codigo": "17133",
+                    "titulo": "Clase simulada 17133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "172",
+            "titulo": "División simulada 172",
+            "grupos": [
+              {
+                "codigo": "1721",
+                "titulo": "Grupo simulado 1721",
+                "clases": [
+                  {
+                    "codigo": "17211",
+                    "titulo": "Clase simulada 17211"
+                  },
+                  {
+                    "codigo": "17212",
+                    "titulo": "Clase simulada 17212"
+                  },
+                  {
+                    "codigo": "17213",
+                    "titulo": "Clase simulada 17213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1722",
+                "titulo": "Grupo simulado 1722",
+                "clases": [
+                  {
+                    "codigo": "17221",
+                    "titulo": "Clase simulada 17221"
+                  },
+                  {
+                    "codigo": "17222",
+                    "titulo": "Clase simulada 17222"
+                  },
+                  {
+                    "codigo": "17223",
+                    "titulo": "Clase simulada 17223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1723",
+                "titulo": "Grupo simulado 1723",
+                "clases": [
+                  {
+                    "codigo": "17231",
+                    "titulo": "Clase simulada 17231"
+                  },
+                  {
+                    "codigo": "17232",
+                    "titulo": "Clase simulada 17232"
+                  },
+                  {
+                    "codigo": "17233",
+                    "titulo": "Clase simulada 17233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "173",
+            "titulo": "División simulada 173",
+            "grupos": [
+              {
+                "codigo": "1731",
+                "titulo": "Grupo simulado 1731",
+                "clases": [
+                  {
+                    "codigo": "17311",
+                    "titulo": "Clase simulada 17311"
+                  },
+                  {
+                    "codigo": "17312",
+                    "titulo": "Clase simulada 17312"
+                  },
+                  {
+                    "codigo": "17313",
+                    "titulo": "Clase simulada 17313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1732",
+                "titulo": "Grupo simulado 1732",
+                "clases": [
+                  {
+                    "codigo": "17321",
+                    "titulo": "Clase simulada 17321"
+                  },
+                  {
+                    "codigo": "17322",
+                    "titulo": "Clase simulada 17322"
+                  },
+                  {
+                    "codigo": "17323",
+                    "titulo": "Clase simulada 17323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1733",
+                "titulo": "Grupo simulado 1733",
+                "clases": [
+                  {
+                    "codigo": "17331",
+                    "titulo": "Clase simulada 17331"
+                  },
+                  {
+                    "codigo": "17332",
+                    "titulo": "Clase simulada 17332"
+                  },
+                  {
+                    "codigo": "17333",
+                    "titulo": "Clase simulada 17333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "S",
+        "titulo": "Otros servicios",
+        "divisiones": [
+          {
+            "codigo": "181",
+            "titulo": "División simulada 181",
+            "grupos": [
+              {
+                "codigo": "1811",
+                "titulo": "Grupo simulado 1811",
+                "clases": [
+                  {
+                    "codigo": "18111",
+                    "titulo": "Clase simulada 18111"
+                  },
+                  {
+                    "codigo": "18112",
+                    "titulo": "Clase simulada 18112"
+                  },
+                  {
+                    "codigo": "18113",
+                    "titulo": "Clase simulada 18113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1812",
+                "titulo": "Grupo simulado 1812",
+                "clases": [
+                  {
+                    "codigo": "18121",
+                    "titulo": "Clase simulada 18121"
+                  },
+                  {
+                    "codigo": "18122",
+                    "titulo": "Clase simulada 18122"
+                  },
+                  {
+                    "codigo": "18123",
+                    "titulo": "Clase simulada 18123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1813",
+                "titulo": "Grupo simulado 1813",
+                "clases": [
+                  {
+                    "codigo": "18131",
+                    "titulo": "Clase simulada 18131"
+                  },
+                  {
+                    "codigo": "18132",
+                    "titulo": "Clase simulada 18132"
+                  },
+                  {
+                    "codigo": "18133",
+                    "titulo": "Clase simulada 18133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "182",
+            "titulo": "División simulada 182",
+            "grupos": [
+              {
+                "codigo": "1821",
+                "titulo": "Grupo simulado 1821",
+                "clases": [
+                  {
+                    "codigo": "18211",
+                    "titulo": "Clase simulada 18211"
+                  },
+                  {
+                    "codigo": "18212",
+                    "titulo": "Clase simulada 18212"
+                  },
+                  {
+                    "codigo": "18213",
+                    "titulo": "Clase simulada 18213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1822",
+                "titulo": "Grupo simulado 1822",
+                "clases": [
+                  {
+                    "codigo": "18221",
+                    "titulo": "Clase simulada 18221"
+                  },
+                  {
+                    "codigo": "18222",
+                    "titulo": "Clase simulada 18222"
+                  },
+                  {
+                    "codigo": "18223",
+                    "titulo": "Clase simulada 18223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1823",
+                "titulo": "Grupo simulado 1823",
+                "clases": [
+                  {
+                    "codigo": "18231",
+                    "titulo": "Clase simulada 18231"
+                  },
+                  {
+                    "codigo": "18232",
+                    "titulo": "Clase simulada 18232"
+                  },
+                  {
+                    "codigo": "18233",
+                    "titulo": "Clase simulada 18233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "183",
+            "titulo": "División simulada 183",
+            "grupos": [
+              {
+                "codigo": "1831",
+                "titulo": "Grupo simulado 1831",
+                "clases": [
+                  {
+                    "codigo": "18311",
+                    "titulo": "Clase simulada 18311"
+                  },
+                  {
+                    "codigo": "18312",
+                    "titulo": "Clase simulada 18312"
+                  },
+                  {
+                    "codigo": "18313",
+                    "titulo": "Clase simulada 18313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1832",
+                "titulo": "Grupo simulado 1832",
+                "clases": [
+                  {
+                    "codigo": "18321",
+                    "titulo": "Clase simulada 18321"
+                  },
+                  {
+                    "codigo": "18322",
+                    "titulo": "Clase simulada 18322"
+                  },
+                  {
+                    "codigo": "18323",
+                    "titulo": "Clase simulada 18323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1833",
+                "titulo": "Grupo simulado 1833",
+                "clases": [
+                  {
+                    "codigo": "18331",
+                    "titulo": "Clase simulada 18331"
+                  },
+                  {
+                    "codigo": "18332",
+                    "titulo": "Clase simulada 18332"
+                  },
+                  {
+                    "codigo": "18333",
+                    "titulo": "Clase simulada 18333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "T",
+        "titulo": "Actividades de los hogares como empleadores de personal doméstico",
+        "divisiones": [
+          {
+            "codigo": "191",
+            "titulo": "División simulada 191",
+            "grupos": [
+              {
+                "codigo": "1911",
+                "titulo": "Grupo simulado 1911",
+                "clases": [
+                  {
+                    "codigo": "19111",
+                    "titulo": "Clase simulada 19111"
+                  },
+                  {
+                    "codigo": "19112",
+                    "titulo": "Clase simulada 19112"
+                  },
+                  {
+                    "codigo": "19113",
+                    "titulo": "Clase simulada 19113"
+                  }
+                ]
+              },
+              {
+                "codigo": "1912",
+                "titulo": "Grupo simulado 1912",
+                "clases": [
+                  {
+                    "codigo": "19121",
+                    "titulo": "Clase simulada 19121"
+                  },
+                  {
+                    "codigo": "19122",
+                    "titulo": "Clase simulada 19122"
+                  },
+                  {
+                    "codigo": "19123",
+                    "titulo": "Clase simulada 19123"
+                  }
+                ]
+              },
+              {
+                "codigo": "1913",
+                "titulo": "Grupo simulado 1913",
+                "clases": [
+                  {
+                    "codigo": "19131",
+                    "titulo": "Clase simulada 19131"
+                  },
+                  {
+                    "codigo": "19132",
+                    "titulo": "Clase simulada 19132"
+                  },
+                  {
+                    "codigo": "19133",
+                    "titulo": "Clase simulada 19133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "192",
+            "titulo": "División simulada 192",
+            "grupos": [
+              {
+                "codigo": "1921",
+                "titulo": "Grupo simulado 1921",
+                "clases": [
+                  {
+                    "codigo": "19211",
+                    "titulo": "Clase simulada 19211"
+                  },
+                  {
+                    "codigo": "19212",
+                    "titulo": "Clase simulada 19212"
+                  },
+                  {
+                    "codigo": "19213",
+                    "titulo": "Clase simulada 19213"
+                  }
+                ]
+              },
+              {
+                "codigo": "1922",
+                "titulo": "Grupo simulado 1922",
+                "clases": [
+                  {
+                    "codigo": "19221",
+                    "titulo": "Clase simulada 19221"
+                  },
+                  {
+                    "codigo": "19222",
+                    "titulo": "Clase simulada 19222"
+                  },
+                  {
+                    "codigo": "19223",
+                    "titulo": "Clase simulada 19223"
+                  }
+                ]
+              },
+              {
+                "codigo": "1923",
+                "titulo": "Grupo simulado 1923",
+                "clases": [
+                  {
+                    "codigo": "19231",
+                    "titulo": "Clase simulada 19231"
+                  },
+                  {
+                    "codigo": "19232",
+                    "titulo": "Clase simulada 19232"
+                  },
+                  {
+                    "codigo": "19233",
+                    "titulo": "Clase simulada 19233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "193",
+            "titulo": "División simulada 193",
+            "grupos": [
+              {
+                "codigo": "1931",
+                "titulo": "Grupo simulado 1931",
+                "clases": [
+                  {
+                    "codigo": "19311",
+                    "titulo": "Clase simulada 19311"
+                  },
+                  {
+                    "codigo": "19312",
+                    "titulo": "Clase simulada 19312"
+                  },
+                  {
+                    "codigo": "19313",
+                    "titulo": "Clase simulada 19313"
+                  }
+                ]
+              },
+              {
+                "codigo": "1932",
+                "titulo": "Grupo simulado 1932",
+                "clases": [
+                  {
+                    "codigo": "19321",
+                    "titulo": "Clase simulada 19321"
+                  },
+                  {
+                    "codigo": "19322",
+                    "titulo": "Clase simulada 19322"
+                  },
+                  {
+                    "codigo": "19323",
+                    "titulo": "Clase simulada 19323"
+                  }
+                ]
+              },
+              {
+                "codigo": "1933",
+                "titulo": "Grupo simulado 1933",
+                "clases": [
+                  {
+                    "codigo": "19331",
+                    "titulo": "Clase simulada 19331"
+                  },
+                  {
+                    "codigo": "19332",
+                    "titulo": "Clase simulada 19332"
+                  },
+                  {
+                    "codigo": "19333",
+                    "titulo": "Clase simulada 19333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "seccion": "U",
+        "titulo": "Actividades de organizaciones y organismos extraterritoriales",
+        "divisiones": [
+          {
+            "codigo": "201",
+            "titulo": "División simulada 201",
+            "grupos": [
+              {
+                "codigo": "2011",
+                "titulo": "Grupo simulado 2011",
+                "clases": [
+                  {
+                    "codigo": "20111",
+                    "titulo": "Clase simulada 20111"
+                  },
+                  {
+                    "codigo": "20112",
+                    "titulo": "Clase simulada 20112"
+                  },
+                  {
+                    "codigo": "20113",
+                    "titulo": "Clase simulada 20113"
+                  }
+                ]
+              },
+              {
+                "codigo": "2012",
+                "titulo": "Grupo simulado 2012",
+                "clases": [
+                  {
+                    "codigo": "20121",
+                    "titulo": "Clase simulada 20121"
+                  },
+                  {
+                    "codigo": "20122",
+                    "titulo": "Clase simulada 20122"
+                  },
+                  {
+                    "codigo": "20123",
+                    "titulo": "Clase simulada 20123"
+                  }
+                ]
+              },
+              {
+                "codigo": "2013",
+                "titulo": "Grupo simulado 2013",
+                "clases": [
+                  {
+                    "codigo": "20131",
+                    "titulo": "Clase simulada 20131"
+                  },
+                  {
+                    "codigo": "20132",
+                    "titulo": "Clase simulada 20132"
+                  },
+                  {
+                    "codigo": "20133",
+                    "titulo": "Clase simulada 20133"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "202",
+            "titulo": "División simulada 202",
+            "grupos": [
+              {
+                "codigo": "2021",
+                "titulo": "Grupo simulado 2021",
+                "clases": [
+                  {
+                    "codigo": "20211",
+                    "titulo": "Clase simulada 20211"
+                  },
+                  {
+                    "codigo": "20212",
+                    "titulo": "Clase simulada 20212"
+                  },
+                  {
+                    "codigo": "20213",
+                    "titulo": "Clase simulada 20213"
+                  }
+                ]
+              },
+              {
+                "codigo": "2022",
+                "titulo": "Grupo simulado 2022",
+                "clases": [
+                  {
+                    "codigo": "20221",
+                    "titulo": "Clase simulada 20221"
+                  },
+                  {
+                    "codigo": "20222",
+                    "titulo": "Clase simulada 20222"
+                  },
+                  {
+                    "codigo": "20223",
+                    "titulo": "Clase simulada 20223"
+                  }
+                ]
+              },
+              {
+                "codigo": "2023",
+                "titulo": "Grupo simulado 2023",
+                "clases": [
+                  {
+                    "codigo": "20231",
+                    "titulo": "Clase simulada 20231"
+                  },
+                  {
+                    "codigo": "20232",
+                    "titulo": "Clase simulada 20232"
+                  },
+                  {
+                    "codigo": "20233",
+                    "titulo": "Clase simulada 20233"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "codigo": "203",
+            "titulo": "División simulada 203",
+            "grupos": [
+              {
+                "codigo": "2031",
+                "titulo": "Grupo simulado 2031",
+                "clases": [
+                  {
+                    "codigo": "20311",
+                    "titulo": "Clase simulada 20311"
+                  },
+                  {
+                    "codigo": "20312",
+                    "titulo": "Clase simulada 20312"
+                  },
+                  {
+                    "codigo": "20313",
+                    "titulo": "Clase simulada 20313"
+                  }
+                ]
+              },
+              {
+                "codigo": "2032",
+                "titulo": "Grupo simulado 2032",
+                "clases": [
+                  {
+                    "codigo": "20321",
+                    "titulo": "Clase simulada 20321"
+                  },
+                  {
+                    "codigo": "20322",
+                    "titulo": "Clase simulada 20322"
+                  },
+                  {
+                    "codigo": "20323",
+                    "titulo": "Clase simulada 20323"
+                  }
+                ]
+              },
+              {
+                "codigo": "2033",
+                "titulo": "Grupo simulado 2033",
+                "clases": [
+                  {
+                    "codigo": "20331",
+                    "titulo": "Clase simulada 20331"
+                  },
+                  {
+                    "codigo": "20332",
+                    "titulo": "Clase simulada 20332"
+                  },
+                  {
+                    "codigo": "20333",
+                    "titulo": "Clase simulada 20333"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
