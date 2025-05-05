@@ -9,7 +9,6 @@ from starlette.middleware.gzip import GZipMiddleware
 from pydantic_settings import BaseSettings
 from typing import List, Union
 
-# Configuración básica con pydantic
 class Settings(BaseSettings):
     API_TITLE: str = "Creixem API"
     API_VERSION: str = "1.0.0"
