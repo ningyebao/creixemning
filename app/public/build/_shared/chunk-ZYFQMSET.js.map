@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/services/campanya.service.ts"],
-  "sourcesContent": ["// REMIX HMR BEGIN\nimport * as __hmr__ from \"remix:hmr\";\nif (import.meta) {\nimport.meta.hot = __hmr__.createHotContext(\n//@ts-expect-error\n\"app\\\\services\\\\campanya.service.ts\"\n);\nimport.meta.hot.lastModified = \"1746438531668.5361\";\n}\n// REMIX HMR END\n\n// app/services/campanya.service.ts\r\nimport { apiClient } from \"~/lib/api/client\";\r\nimport type { Campanya } from \"~/lib/types\";\r\n\r\nexport class CampanyaService {\r\n  static async getAll(): Promise<Campanya[]> {\r\n    return await apiClient.get<Campanya[]>(\"/campanya\");\r\n  }\r\n  \r\n  static async getById(id: number): Promise<Campanya> {\r\n    return await apiClient.get<Campanya>(`/campanya/${id}`);  // Corregido: a\u00F1adida barra\r\n  }\r\n  \r\n  static async create(campanya: Partial<Campanya>): Promise<Campanya> {\r\n    return await apiClient.post<Campanya>(\"/campanya\", campanya);\r\n  }\r\n  \r\n \r\n}"],
-  "mappings": ";;;;;;;;AAEA,IAAI,aAAa;AACjB,cAAY,MAAc;AAAA;AAAA,IAE1B;AAAA,EACA;AACA,cAAY,IAAI,eAAe;AAC/B;AAOO,IAAM,kBAAN,MAAsB;AAAA,EAC3B,aAAa,SAA8B;AACzC,WAAO,MAAM,UAAU,IAAgB,WAAW;AAAA,EACpD;AAAA,EAEA,aAAa,QAAQ,IAA+B;AAClD,WAAO,MAAM,UAAU,IAAc,aAAa,IAAI;AAAA,EACxD;AAAA,EAEA,aAAa,OAAO,UAAgD;AAClE,WAAO,MAAM,UAAU,KAAe,aAAa,QAAQ;AAAA,EAC7D;AAGF;",
-  "names": []
-}

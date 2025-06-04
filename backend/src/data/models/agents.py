@@ -1,16 +1,17 @@
 from sqlalchemy import Column, Integer, String, DateTime, Text
-from data.database import Base 
+from sqlalchemy.sql import func  # Importa func
+from data.database import Base
 
 class Agent(Base):
     __tablename__ = 'agents'
-    __table_args__ = {'schema': "creixemprueba3"}  # Fixed missing underscore
-    
+    __table_args__ = {'schema': "creixemprueba3"}
+
     id_agent = Column(Integer, primary_key=True, autoincrement=True)
     nom_agent = Column(String, nullable=False)
     contrasenya_agent = Column(String, nullable=False, server_default='creixem123')
     data_alta_agent = Column(DateTime)
     data_baixa_agent = Column(DateTime)
-    data_creacio_agent = Column(DateTime)
+    data_creacio_agent = Column(DateTime, server_default=func.now())
     cognom1_agent = Column(String)
     cognom2_agent = Column(String)
     adreça_agent = Column(String)
@@ -22,4 +23,4 @@ class Agent(Base):
     seguretat_social_agent = Column(String)
     compte_corrent_agent = Column(String)
     Agents_nom_firma = Column(String)
-    observacions_agent = Column(String)  # o Text
+    observacions_agent = Column(String)

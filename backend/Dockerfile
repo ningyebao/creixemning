@@ -25,21 +25,33 @@ WORKDIR /app
 # Copiamos las dependencias instaladas
 COPY --from=builder /install /usr/local
 
-# Copiamos el código fuente
-COPY . .
+# Copiamos solo el directorio src
+COPY src/ /app/src/
+COPY .env /app/
 
-# Crear un directorio para logs si es necesario
-RUN mkdir -p /app/logs && chown -R appuser:appuser /app
+# Crear directorios necesarios y establecer permisos
+RUN mkdir -p /app/logs && \
+    chown -R appuser:appuser /app
+
+# Verificar estructura (solo para debug, puedes comentar en producción)
+RUN echo "=== Verificando estructura ===" && \
+    ls -la /app/ && \
+    echo "=== Contenido de src ===" && \
+    ls -la /app/src/ && \
+    echo "=== Contenido de data ===" && \
+    ls -la /app/src/data/ || echo "No existe /app/src/data" && \
+    echo "=== Contenido de api ===" && \
+    ls -la /app/src/api/ || echo "No existe /app/src/api"
 
 USER appuser
 ENV PORT=8080
 EXPOSE 8080
 
-# Configurar PYTHONPATH correcto para que encuentre los módulos
+# Configurar PYTHONPATH para incluir /app/src
 ENV PYTHONPATH=/app/src:$PYTHONPATH
 
-# Establecer el directorio de trabajo correcto donde está main.py
+# Cambiar al directorio donde está main.py
 WORKDIR /app/src
 
-# Ejecutar la aplicación con uvicorn
-CMD exec uvicorn main:app --host 0.0.0.0 --port $PORT
+# Ejecutar la aplicación
+CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]

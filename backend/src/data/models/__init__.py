@@ -12,7 +12,7 @@ from .leads import Lead
 from .contactes_leads import ContacteLead
 from .fitxes_trucades import FitxaTrucada
 from .altes import Alta
-
+from .filter_group import FilterGroup
 
 from .asignats import Asignat
 from .campanya_productes import CampanyaProducte

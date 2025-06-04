@@ -1,6 +1,7 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, validator
 from typing import Optional
 from datetime import datetime
+
 
 class LeadBase(BaseModel):
     nom_lead: Optional[str] = None
@@ -32,16 +33,33 @@ class LeadBase(BaseModel):
     xarxe_social_lead: Optional[str] = None
     idioma_preferent_lead: Optional[str] = None
 
+    @validator("email_lead", pre=True, always=True)
+    def coerce_invalid_email(cls, v):
+        # Convierte correos vacíos o inválidos en None
+        if v is None or v == "":
+            return None
+        try:
+            # Intenta construir un EmailStr para validación
+            return EmailStr(v)
+        except (ValueError, TypeError):
+            return None
+
+    class Config:
+        # Pydantic v2: usar desde atributos en lugar de orm_mode
+        from_attributes = True
+
+
 class LeadCreate(LeadBase):
-    nom_lead: str
+    nom_lead: str  # obligatorio para crear
+
 
 class LeadUpdate(LeadBase):
+    pass  # actualización parcial opcional
 
-    pass
 
 class Lead(LeadBase):
     id_lead: int
     data_registre_lead: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True

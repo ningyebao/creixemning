@@ -1,76 +1,122 @@
+// app/root.tsx
+import type { LinksFunction, LoaderFunction, MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
   Links,
   LiveReload,
   Meta,
-  Outlet,
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  isRouteErrorResponse,
+  useRouteError,
 } from "@remix-run/react";
-import { useState, useEffect } from "react";
-import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
+import React, { useState, useEffect } from "react";
 
 import { AppLayout } from "~/components/AppLayout";
-import styles from "~/tailwind.css";
+import tailwindStyles from "~/tailwind.css";
 
+// 1. Metadata
+export const meta: MetaFunction = () => [
+  { charset: "utf-8" },
+  { title: "Mi Aplicación" },
+  { name: "viewport", content: "width=device-width,initial-scale=1" },
+];
+
+// 2. Global styles
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
+  { rel: "stylesheet", href: tailwindStyles },
   { rel: "icon", href: "/favicon.ico" },
 ];
 
-export const loader = async ({ request }: LoaderFunctionArgs) => {
-  return json({
-    // You can add any global app data here that needs to be available throughout the app
-    appName: "CRM Creixem",
-    appVersion: "1.0.0",
-    userInfo: {
-      name: "Admin Creixem",
-      role: "Administrador",
-      initials: "AC"
-    }
-  });
+// 3. Loader global
+export const loader: LoaderFunction = async () => {
+  const appName = process.env.APP_NAME ?? "Mi Aplicación";
+  return json({ appName });
 };
+type LoaderData = { appName: string };
 
-export default function App() {
-  const loaderData = useLoaderData<typeof loader>();
-  const [isAppLoaded, setIsAppLoaded] = useState(false);
-
-  // Simulate app loading - could be used for auth check or data preloading
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsAppLoaded(true);
-    }, 300);
-    
-    return () => clearTimeout(timer);
-  }, []);
-
+// 4. Estructura HTML general (modificada)
+function Document({ 
+  children, 
+  appName = "Mi Aplicación" // Valor predeterminado
+}: { 
+  children: React.ReactNode; 
+  appName?: string; 
+}) {
   return (
-    <html lang="es">
+    <html lang="es" className="h-full bg-gray-100 text-gray-900 antialiased">
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
-      <body className="bg-gray-100 text-gray-900 antialiased">
-        {!isAppLoaded ? (
-          // Loading screen
-          <div className="h-screen flex items-center justify-center bg-gray-800">
-            <div className="text-center">
-              <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-500 mx-auto"></div>
-              <h2 className="mt-4 text-xl font-semibold text-white">Cargando {loaderData.appName}...</h2>
-            </div>
-          </div>
-        ) : (
-          // Main app layout
-          <AppLayout />
-        )}
-        
+      <body className="flex flex-col min-h-screen">
+        {children}
         <ScrollRestoration />
         <Scripts />
-        <LiveReload />
+        {process.env.NODE_ENV === "development" && <LiveReload />}
       </body>
     </html>
+  );
+}
+
+// 5. Componente principal
+export default function App() {
+  const { appName } = useLoaderData<LoaderData>() || { appName: "Mi Aplicación" };
+  const [isHydrated, setIsHydrated] = useState(false);
+  useEffect(() => { setIsHydrated(true); }, []);
+
+  return (
+    <Document appName={appName}>
+      {isHydrated ? <AppLayout /> : <LoadingScreen />}
+    </Document>
+  );
+}
+
+// Pantalla de carga
+function LoadingScreen() {
+  return (
+    <div className="flex items-center justify-center flex-1 h-screen">
+      <div className="animate-spin h-12 w-12 border-4 border-primary-500 rounded-full" />
+    </div>
+  );
+}
+
+// Error boundaries
+export function ErrorBoundary() {
+  const error = useRouteError();
+  
+  if (isRouteErrorResponse(error)) {
+    return (
+      <Document>
+        <div className="p-8 text-center">
+          <h1 className="text-2xl font-bold">
+            {error.status} {error.statusText}
+          </h1>
+          <p>{error.data?.message ?? "Ha ocurrido un error."}</p>
+        </div>
+      </Document>
+    );
+  }
+  return (
+    <Document>
+      <div className="p-8 text-center">
+        <h1 className="text-2xl font-bold">Error</h1>
+        <p>{(error as Error).message}</p>
+      </div>
+    </Document>
+  );
+}
+
+export function CatchBoundary() {
+  const caught = useRouteError();
+  
+  return (
+    <Document>
+      <div className="p-8 text-center">
+        <h1 className="text-2xl font-bold">Algo salió mal</h1>
+        <pre>{JSON.stringify(caught, null, 2)}</pre>
+      </div>
+    </Document>
   );
 }

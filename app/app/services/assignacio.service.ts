@@ -2,290 +2,313 @@
 import { apiClient } from "~/lib/api/client";
 import type { Assignacio, AssignacioFilters } from "~/lib/types";
 
-// Definir estados válidos como tipo y constantes
-type EstadoAsignacion = "Pendiente" | "En progreso" | "Completada" | "Cancelada";
-const ESTADOS_ASIGNACION = {
-  PENDIENTE: "Pendiente" as EstadoAsignacion,
-  EN_PROGRESO: "En progreso" as EstadoAsignacion,
-  COMPLETADA: "Completada" as EstadoAsignacion,
-  CANCELADA: "Cancelada" as EstadoAsignacion
-};
+/**
+ * Resultado de operaciones masivas
+ */
+interface BulkResult {
+  success: number;
+  error: number;
+  errorDetails?: string;
+}
 
 export class AssignacioService {
-  // Constante para el endpoint base - esto asegura consistencia
-  private static ENDPOINT = "/fitxes_assignacions";
+  // Ruta correcta según la configuración del backend
+  private static BASE_URL = '/fitxes-assignacions/';
 
   /**
-   * Obtiene una lista paginada y filtrada de asignaciones.
+   * Obtiene todas las asignaciones con filtros opcionales
+   * @param skip Número de registros a omitir para paginación
+   * @param limit Límite de registros por página
+   * @param filters Filtros opcionales para la búsqueda
+   * @returns Lista de asignaciones
    */
-  static async getAll(
-    offset: number = 0,
-    limit: number = 50,
-    filters: AssignacioFilters = {}
-  ): Promise<Assignacio[]> {
+  static async getAll(skip = 0, limit = 100, filters?: AssignacioFilters): Promise<Assignacio[]> {
     try {
-      // Crear un objeto de parámetros de consulta
-      const params: Record<string, any> = { 
-        offset, 
-        limit,
-        ...filters 
-      };
-      
-      console.log(`AssignacioService.getAll: Fetching with params:`, params);
-      const response = await apiClient.get<Assignacio[]>(this.ENDPOINT, params);
-      return response;
+      const params = { skip, limit, ...filters };
+      console.log('Obteniendo asignaciones con filtros:', JSON.stringify(filters, null, 2));
+      return await apiClient.get<Assignacio[]>(this.BASE_URL, { params });
     } catch (error) {
-      console.error(`AssignacioService.getAll: Error fetching assignments`, error);
-      throw error;
+      console.error('Error fetching assignacions:', error);
+      throw this.handleError(error);
     }
   }
 
   /**
-   * Actualiza una asignación existente por su ID.
+   * Obtiene una asignación por su ID
+   * @param id ID de la asignación
+   * @returns Asignación encontrada
    */
-  static async update(
-    id: number,
-    data: Partial<Omit<Assignacio, 'id_fitxes_asignacions'>>
+  static async getById(id: number): Promise<Assignacio> {
+    try {
+      return await apiClient.get<Assignacio>(`${this.BASE_URL}${id}`);
+    } catch (error) {
+      console.error(`Error fetching assignacio with ID ${id}:`, error);
+      throw this.handleError(error);
+    }
+  }
+
+  /**
+   * Obtiene asignaciones por ID de agente
+   * @param agentId ID del agente
+   * @param skip Número de registros a omitir para paginación
+   * @param limit Límite de registros por página
+   * @returns Lista de asignaciones del agente
+   */
+  static async getByAgent(agentId: number, skip = 0, limit = 100): Promise<Assignacio[]> {
+    try {
+      const params = { id_agents: agentId, skip, limit };
+      return await apiClient.get<Assignacio[]>(this.BASE_URL, { params });
+    } catch (error) {
+      console.error(`Error fetching assignacions for agent ${agentId}:`, error);
+      throw this.handleError(error);
+    }
+  }
+
+  /**
+   * Obtiene asignaciones por ID de lead
+   * @param leadId ID del lead
+   * @param skip Número de registros a omitir para paginación
+   * @param limit Límite de registros por página
+   * @returns Lista de asignaciones del lead
+   */
+  static async getByLead(leadId: number, skip = 0, limit = 100): Promise<Assignacio[]> {
+    try {
+      const params = { id_leads: leadId, skip, limit };
+      return await apiClient.get<Assignacio[]>(this.BASE_URL, { params });
+    } catch (error) {
+      console.error(`Error fetching assignacions for lead ${leadId}:`, error);
+      throw this.handleError(error);
+    }
+  }
+
+  /**
+   * Asigna un lead a un agente
+   * @param agentId ID del agente
+   * @param leadId ID del lead
+   * @param prioritat Prioridad de la asignación
+   * @param potencial Potencial de la asignación
+   * @param observaciones Observaciones opcionales
+   * @param campanyaId ID de la campaña
+   * @param authorId ID del autor de la asignación
+   * @returns Asignación creada
+   */
+  static async assign(
+    agentId: number,
+    leadId: number,
+    prioritat: number,
+    potencial: number,
+    observaciones: string,
+    campanyaId: number,
+    authorId: number = 1
   ): Promise<Assignacio> {
     try {
-      // Asegurar que estamos utilizando un formato de campo consistente
-      const normalizedData = this.normalizeAssignmentData(data);
+      console.log(`Asignando lead ${leadId} a agente ${agentId}`);
       
-      const endpoint = `${this.ENDPOINT}/${id}/`;
-      console.log(`AssignacioService.update: Updating assignment ${id} with data:`, normalizedData); 
-      const response = await apiClient.patch<Assignacio>(endpoint, normalizedData);
-      return response;
+      // IMPORTANTE: Ahora usamos id_campanya como lo requiere el backend
+      const data = {
+        id_agents: agentId,
+        id_leads: leadId,
+        prioritat_fitxes_assignacions: prioritat,
+        potencial_fitxes_assignacions: potencial,
+        obsevacions_fitxes_assignacions: observaciones,
+        id_campanya: campanyaId, // Nombre requerido por el backend
+        id_autor: authorId,
+        estat_fitxes_assignacions: "Pendiente" // Estado por defecto
+      };
+
+      console.log('Datos de asignación:', data);
+      return await apiClient.post<Assignacio>(this.BASE_URL, data);
     } catch (error) {
-      console.error(`AssignacioService.update: Error updating assignment ${id}`, error);
-      throw error;
+      console.error(`Error assigning lead ${leadId} to agent ${agentId}:`, error);
+      throw this.handleError(error);
     }
   }
 
   /**
-   * Realiza una asignación masiva de leads a agentes (Round-Robin, método equitativo)
+   * Asigna múltiples leads a múltiples agentes en modo round-robin
+   * @param agentIds Array de IDs de agentes
+   * @param leadIds Array de IDs de leads
+   * @param prioritat Prioridad de las asignaciones
+   * @param potencial Potencial de las asignaciones
+   * @param observaciones Observaciones opcionales
+   * @param campanyaId ID de la campaña
+   * @param authorId ID del autor de las asignaciones
+   * @returns Resultado de la operación
    */
   static async bulkAssign(
     agentIds: number[],
     leadIds: number[],
     prioritat: number,
     potencial: number,
-    observaciones = '',
-    idCampanya = 1,
-    idAutor = 1
-  ): Promise<{ success: number; error: number; errorDetails?: string }> {
+    observaciones: string,
+    campanyaId: number,
+    authorId: number = 1
+  ): Promise<BulkResult> {
     try {
-      if (agentIds.length === 0 || leadIds.length === 0) {
-        return { 
-          success: 0, 
-          error: 0, 
-          errorDetails: "No hay agentes o leads seleccionados" 
-        };
+      console.log('Iniciando asignación masiva round-robin con:', {
+        agentIds, leadIds, prioritat, potencial, observaciones, campanyaId, authorId
+      });
+      
+      // Implementar lógica de round-robin manualmente
+      let assignedCount = 0;
+      let errorCount = 0;
+      let errorDetails = '';
+      
+      // Asignación round-robin (distribuir leads entre agentes)
+      for (let i = 0; i < leadIds.length; i++) {
+        const agentIndex = i % agentIds.length;
+        const agentId = agentIds[agentIndex];
+        const leadId = leadIds[i];
+        
+        try {
+          console.log(`Asignando lead ${leadId} a agente ${agentId} (${i+1}/${leadIds.length})`);
+          await this.assign(agentId, leadId, prioritat, potencial, observaciones, campanyaId, authorId);
+          assignedCount++;
+        } catch (assignError: any) {
+          errorCount++;
+          errorDetails += `Lead ${leadId} a Agente ${agentId}: ${assignError.message}. `;
+          console.error(`Error al asignar lead ${leadId} a agente ${agentId}:`, assignError);
+        }
       }
-
-      const leadId = leadIds[0];
-      const agentId = agentIds[0];
-
-      const iso = new Date().toISOString();
-      const naive = iso.replace('Z', '');
-
-      // Usar un nombre de campo consistente para observaciones y el tipo correcto para el estado
-      const data: Omit<Assignacio, 'id_fitxes_asignacions'> = {
-        id_agents: agentId,
-        id_leads: leadId,
-        id_autor: idAutor,
-        id_campanya_leads: idCampanya,
-        estat_fitxes_assignacions: ESTADOS_ASIGNACION.PENDIENTE,
-        potencial_fitxes_assignacions: potencial,
-        prioritat_fitxes_assignacions: prioritat,
-        obsevacions_fitxes_assignacions: observaciones, // Usar el nombre de campo que espera el backend
-        data_creacio_fitxes_assignacions: naive,
-        id_fitxes_trucades_fitxes_asignacions: 0
+      
+      console.log(`Asignación round-robin completada: ${assignedCount} éxitos, ${errorCount} errores`);
+      return {
+        success: assignedCount,
+        error: errorCount,
+        errorDetails: errorDetails || undefined
       };
-
-      console.log('bulkAssign payload:', data);
-
-      const result = await this.create(data);
-      console.log('Asignación creada:', result);
-      return { success: 1, error: 0 };
-    } catch (err) {
-      console.error('Error en bulkAssign:', err);
-      return { 
-        success: 0, 
-        error: 1, 
-        errorDetails: err instanceof Error ? err.message : String(err) 
-      };
+    } catch (error) {
+      console.error('Error en bulkAssign:', error);
+      throw this.handleError(error);
     }
   }
 
   /**
-   * Realiza una asignación masiva de todos los leads a todos los agentes seleccionados
+   * Asigna múltiples leads a múltiples agentes (todos a todos)
+   * @param agentIds Array de IDs de agentes
+   * @param leadIds Array de IDs de leads
+   * @param prioritat Prioridad de las asignaciones
+   * @param potencial Potencial de las asignaciones
+   * @param observaciones Observaciones opcionales
+   * @param campanyaId ID de la campaña
+   * @param authorId ID del autor de las asignaciones
+   * @returns Resultado de la operación
    */
   static async bulkAssignAll(
     agentIds: number[],
     leadIds: number[],
     prioritat: number,
     potencial: number,
-    observaciones = '',
-    idCampanya = 1,
-    idAutor = 1
-  ): Promise<{ success: number; error: number; errorDetails?: string }> {
-    if (agentIds.length === 0 || leadIds.length === 0) {
-      return { 
-        success: 0, 
-        error: 0, 
-        errorDetails: "No hay agentes o leads seleccionados" 
-      };
-    }
-
-    const assignments: Omit<Assignacio, 'id_fitxes_asignacions'>[] = [];
-    const iso = new Date().toISOString();
-    const naive = iso.replace('Z', '');
-
-    // Crear todas las asignaciones lead-agente
-    for (const leadId of leadIds) {
-      for (const agentId of agentIds) {
-        assignments.push({
-          id_agents: agentId,
-          id_leads: leadId,
-          id_autor: idAutor,
-          id_campanya_leads: idCampanya,
-          estat_fitxes_assignacions: ESTADOS_ASIGNACION.PENDIENTE,
-          potencial_fitxes_assignacions: potencial,
-          prioritat_fitxes_assignacions: prioritat,
-          obsevacions_fitxes_assignacions: observaciones, // Usar el nombre de campo consistente
-          data_creacio_fitxes_assignacions: naive,
-          id_fitxes_trucades_fitxes_asignacions: 0
-        });
-      }
-    }
-
-    console.log('bulkAssignAll assignments count:', assignments.length);
-    console.log('bulkAssignAll sample payload:', assignments.slice(0, 1));
-
-    // Usar Promise.allSettled para manejar casos de éxito y fallo
-    const results = await Promise.allSettled(
-      assignments.map(data => this.create(data))
-    );
-
-    const successCount = results.filter(r => r.status === 'fulfilled').length;
-    const rejected = results.filter(r => r.status === 'rejected') as PromiseRejectedResult[];
-    const errorCount = rejected.length;
-    
-    let errorDetails = '';
-    if (errorCount > 0) {
-      // Extraer información detallada de los errores
-      errorDetails = rejected.map(r => {
-        const reason = r.reason;
-        if (reason instanceof Error) {
-          return reason.message;
-        }
-        return String(reason);
-      }).join('; ');
-    }
-
-    console.log('bulkAssignAll results:', { successCount, errorCount, errorDetails });
-
-    return { 
-      success: successCount, 
-      error: errorCount, 
-      errorDetails: errorDetails || undefined 
-    };
-  }
-
-  /**
-   * Crea una asignación individual de un lead a un agente para una campaña.
-   */
-  static async createIndividualAssignment(
-    leadId: number,
-    agentId: number,
-    prioritat: number,
-    potencial: number,
     observaciones: string,
     campanyaId: number,
-    idAutor = 1
-  ): Promise<Assignacio> {
-    const iso = new Date().toISOString();
-    const naive = iso.replace('Z', '');
-
-    const data: Omit<Assignacio, 'id_fitxes_asignacions'> = {
-      id_agents: agentId,
-      id_leads: leadId,
-      id_autor: idAutor,
-      id_campanya_leads: campanyaId,
-      estat_fitxes_assignacions: ESTADOS_ASIGNACION.PENDIENTE,
-      potencial_fitxes_assignacions: potencial,
-      prioritat_fitxes_assignacions: prioritat,
-      obsevacions_fitxes_assignacions: observaciones, // Usar nombre consistente
-      data_creacio_fitxes_assignacions: naive,
-      id_fitxes_trucades_fitxes_asignacions: 0
-    };
-
-    console.log('createIndividualAssignment payload:', data);
-    return this.create(data);
-  }
-
-  /** Método genérico para crear una asignación */
-  static async create(
-    data: Omit<Assignacio, 'id_fitxes_asignacions'>
-  ): Promise<Assignacio> {
+    authorId: number = 1
+  ): Promise<BulkResult> {
     try {
-      // Normalizar datos antes de enviar
-      const normalizedData = this.normalizeAssignmentData(data);
+      console.log('Iniciando asignación masiva todos-a-todos con:', {
+        agentIds, leadIds, prioritat, potencial, observaciones, campanyaId, authorId
+      });
       
-      // Asegurarnos de que estamos usando el endpoint correcto
-      return apiClient.post<Assignacio>(this.ENDPOINT, normalizedData);
-    } catch (error) {
-      console.error(`AssignacioService.create: Error creating assignment`, error);
-      throw error;
-    }
-  }
-
-  /**
-   * Obtiene una asignación por su ID
-   */
-  static async getById(id: number): Promise<Assignacio | null> {
-    try {
-      const endpoint = `${this.ENDPOINT}/${id}/`;
-      console.log(`AssignacioService.getById: Fetching from ${endpoint}`);
-      const response = await apiClient.get<Assignacio>(endpoint);
-      return response;
-    } catch (error) {
-      console.error(`AssignacioService.getById: Error fetching assignment ${id}`, error);
-      // Si el error es 404, devolvemos null en lugar de lanzar el error
-      if (error && typeof error === 'object' && 'status' in error && error.status === 404) {
-        return null;
+      // Implementar asignación todos a todos manualmente
+      let assignedCount = 0;
+      let errorCount = 0;
+      let errorDetails = '';
+      const totalAssignments = agentIds.length * leadIds.length;
+      let currentAssignment = 0;
+      
+      // Asignación de todos los leads a todos los agentes
+      for (const agentId of agentIds) {
+        for (const leadId of leadIds) {
+          currentAssignment++;
+          try {
+            console.log(`Asignando lead ${leadId} a agente ${agentId} (${currentAssignment}/${totalAssignments})`);
+            await this.assign(agentId, leadId, prioritat, potencial, observaciones, campanyaId, authorId);
+            assignedCount++;
+          } catch (assignError: any) {
+            errorCount++;
+            errorDetails += `Lead ${leadId} a Agente ${agentId}: ${assignError.message}. `;
+            console.error(`Error al asignar lead ${leadId} a agente ${agentId}:`, assignError);
+          }
+        }
       }
-      throw error;
-    }
-  }
-  
-  /**
-   * Elimina una asignación por su ID
-   */
-  static async delete(id: number): Promise<void> {
-    try {
-      const endpoint = `${this.ENDPOINT}/${id}/`;
-      console.log(`AssignacioService.delete: Deleting assignment ${id} from ${endpoint}`);
-      await apiClient.delete(endpoint);
+      
+      console.log(`Asignación todos-a-todos completada: ${assignedCount} éxitos, ${errorCount} errores`);
+      return {
+        success: assignedCount,
+        error: errorCount,
+        errorDetails: errorDetails || undefined
+      };
     } catch (error) {
-      console.error(`AssignacioService.delete: Error deleting assignment ${id}`, error);
-      throw error;
+      console.error('Error en bulkAssignAll:', error);
+      throw this.handleError(error);
     }
   }
 
   /**
-   * Normaliza los datos de asignación para usar nombres de campo consistentes
-   * Esta función ayuda a manejar las discrepancias entre diferentes partes del código
+   * Actualiza el estado de una asignación
+   * @param id ID de la asignación
+   * @param estado Nuevo estado
+   * @returns Asignación actualizada
    */
-  private static normalizeAssignmentData(data: Record<string, any>): Record<string, any> {
-    const result = { ...data };
+  static async updateStatus(id: number, estado: string): Promise<Assignacio> {
+    try {
+      return await apiClient.patch<Assignacio>(`${this.BASE_URL}${id}`, { 
+        estat_fitxes_assignacions: estado 
+      });
+    } catch (error) {
+      console.error(`Error updating status for assignacio ${id}:`, error);
+      throw this.handleError(error);
+    }
+  }
+
+  /**
+   * Elimina una asignación
+   * @param id ID de la asignación
+   * @returns Resultado de la operación
+   */
+  static async delete(id: number): Promise<{detail: string}> {
+    try {
+      return await apiClient.delete<{detail: string}>(`${this.BASE_URL}${id}`);
+    } catch (error) {
+      console.error(`Error deleting assignacio ${id}:`, error);
+      throw this.handleError(error);
+    }
+  }
+
+  /**
+   * Maneja errores de la API y los transforma en mensajes de error amigables
+   * @param error Error original
+   * @returns Error procesado
+   */
+  private static handleError(error: any): Error {
+    console.error('Error en AssignacioService:', error);
     
-    // Si existe 'observacions_fitxes_assignacions', convertirlo a 'obsevacions_fitxes_assignacions'
-    if ('observacions_fitxes_assignacions' in result) {
-      result['obsevacions_fitxes_assignacions'] = result['observacions_fitxes_assignacions'];
-      delete result['observacions_fitxes_assignacions'];
+    // Si es un error de axios con respuesta
+    if (error.response) {
+      const statusCode = error.response.status;
+      const errorMessage = error.response.data?.detail || 'Error desconocido';
+      
+      switch (statusCode) {
+        case 400:
+          return new Error(`Error en la solicitud: ${errorMessage}`);
+        case 401:
+          return new Error('No autorizado. Por favor, inicie sesión nuevamente.');
+        case 403:
+          return new Error('No tiene permisos para realizar esta acción.');
+        case 404:
+          return new Error('El recurso solicitado no existe.');
+        case 500:
+          return new Error('Error del servidor. Por favor, intente más tarde.');
+        default:
+          return new Error(errorMessage);
+      }
     }
     
-    return result;
+    // Si es un error de red
+    if (error.request) {
+      return new Error('No se pudo conectar con el servidor. Compruebe su conexión a internet.');
+    }
+    
+    // Para errores que no son de axios o errores personalizados
+    return error instanceof Error ? error : new Error('Error desconocido');
   }
 }

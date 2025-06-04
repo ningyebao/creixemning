@@ -29,6 +29,7 @@ from .r_facturacio import router as r_facturacio
 from .r_formes_pagaments import router as r_formes_pagaments
 from .r_registres_auditories import router as r_registres_auditories
 from .r_sucursal import router as r_sucursal
+from .r_filter_groups import router as r_filter_groups
 
 # Helper function to create router config entries
 def router_config(router, prefix, tag=None):
@@ -48,7 +49,8 @@ all_routers = [
     router_config(r_agents, "/agents", "Agents"),
     router_config(r_clients, "/clients", "Clients"),
     router_config(r_leads, "/leads", "Leads"),
-    
+    router_config(r_filter_groups, "/filter-groups", "Filtros Guardados"),
+
     # Commercial activity
     router_config(r_altes, "/altes", "Altes"),
     router_config(r_altes_productes, "/altes-productes", "Altes Productes"),

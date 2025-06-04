@@ -6,7 +6,7 @@ class FitxesAssignacionsBase(BaseModel):
     id_agents: int
     id_leads: int
     id_autor: int
-    id_campanya_leads: int
+    id_campanya: int
     estat_fitxes_assignacions: str
     potencial_fitxes_assignacions: Optional[int] = None
     prioritat_fitxes_assignacions: Optional[int] = None

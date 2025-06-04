@@ -1,4 +1,5 @@
 from typing import List
+from datetime import datetime
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from data.models.clients import Client
@@ -9,7 +10,19 @@ async def get_client(db: AsyncSession, client_id: int) -> Client:
     return result.scalars().first()
 
 async def create_client(db: AsyncSession, client_in: ClientCreate) -> Client:
-    new_client = Client(**client_in.dict())
+    # Convert incoming data to dict, excluding unset fields
+    data = client_in.dict(exclude_unset=True)
+    # Handle data_creacio_client to avoid tz-aware vs tz-naive issues
+    dt = data.get("data_creacio_client")
+    if dt:
+        # if datetime has tzinfo, strip it
+        if hasattr(dt, "tzinfo") and dt.tzinfo is not None:
+            data["data_creacio_client"] = dt.replace(tzinfo=None)
+    else:
+        # if not provided, set to current UTC naive datetime
+        data["data_creacio_client"] = datetime.utcnow()
+    # Create and persist new client
+    new_client = Client(**data)
     db.add(new_client)
     await db.commit()
     await db.refresh(new_client)
@@ -34,7 +47,6 @@ async def delete_client(db: AsyncSession, client_id: int) -> bool:
         return True
     return False
 
-# Función para obtener todos los clientes sin aplicar ningún filtro
 async def get_all_clients(
     db: AsyncSession,
     skip: int = 0,

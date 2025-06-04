@@ -19,7 +19,7 @@ class FitxesAssignacions(Base):
         nullable=False
     )
     id_fitxes_trucades_fitxes_assignacions = Column(Integer)
-    id_campanya_leads = Column(Integer)
+    id_campanya = Column(Integer)
     estat_fitxes_assignacions = Column(String)
     potencial_fitxes_assignacions = Column(Integer)
     prioritat_fitxes_assignacions = Column(Integer)

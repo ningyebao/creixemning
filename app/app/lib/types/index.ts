@@ -1,4 +1,4 @@
-// app/lib/types/index.ts
+// app/lib/types.ts
 
 export interface Agent {
   id_agent: number;
@@ -22,7 +22,6 @@ export interface Agent {
 }
 
 
-// Client type definition
 export interface Client {
   id_client: number;
   nom_client: string;
@@ -41,7 +40,7 @@ export interface Client {
   prioridad: 'Baja' | 'Media' | 'Alta';
 }
 
-// Campaña type definition
+
 export interface Campanya {
   id_campanya: number;
   id_client: number;
@@ -56,7 +55,9 @@ export interface Campanya {
   observacions_campanya?: string;
 }
 
-// Producto type definition
+/**
+ * Representa un producto en el sistema
+ */
 export interface Producte {
   id_producte: number;
   id_client: number;
@@ -71,8 +72,11 @@ export interface Producte {
   databaixa_producte?: string;
 }
 
+/**
+ * Representa un lead (cliente potencial) en el sistema
+ */
 export interface Lead {
-  id_lead: number;
+  id_lead: number; // Cambiado de id: number para coincidir con el modelo de la base de datos
   nom_lead: string;
   adreca_lead?: string;
   codi_postal_lead?: string;
@@ -86,11 +90,11 @@ export interface Lead {
   nom_fiscal_lead?: string;
   activitat_lead?: string;
   creador_lead?: string;
-  data_registre_lead?: string;
   actiu_lead?: boolean;
   mida_lead?: number;
   observacions_lead?: string;
   cnae_lead?: string;
+  fecha_registro?: string;
   any_creacio_lead?: string;
   nombre_treballadors_lead?: number;
   capital_social_lead?: number;
@@ -102,61 +106,12 @@ export interface Lead {
   link_web_lead?: string;
   xarxe_social_lead?: string;
   idioma_preferent_lead?: string;
+  agent_id?: number;
 }
 
-export interface Campanya {
-  id_campanya: number;
-  id_client: number;
-  campanya_nom: string;
-  campanya_num_altes_acordades: number;
-  data_creacio_campanya: string;
-  data_inici_campanya: string;
-  data_fi_campanya: string;
-  activa_campanya: boolean;
-  objectiu_campanya?: string;
-  objectiu_assolit_campanya: boolean;
-  observacions_campanya?: string;
-}
-export interface FilterGroup {
-  id: number;
-  name: string;
-  description: string;
-  filters: Record<string, any>; // Los filtros tal cual se aplican en el loader
-  autoAssignConfig?: {
-    agentIds: number[];
-    campanyaIds: number[];
-    distribucion: 'equitativo' | 'todos';
-    prioritat: number;
-    potencial: number;
-    observaciones: string;
-    isActive: boolean;
-    schedule?: {
-      frequency: 'daily' | 'weekly' | 'monthly';
-      dayOfWeek?: number; // Para frecuencia semanal (0-6, donde 0 es domingo)
-      dayOfMonth?: number; // Para frecuencia mensual (1-31)
-      time: string; // Formato "HH:MM"
-      lastRun: string | null;
-      nextRun: string | null;
-    };
-  };
-  createdAt: string;
-  updatedAt: string;
-  createdBy: number; // ID del usuario que creó el grupo
-}
-export interface Producte {
-  id_producte: number;
-  id_client: number;
-  nom_producte: string;
-  preu_producte: number;  
-  descripcio_producte?: string;
-  sector_producte?: string;
-  significatiu_producte?: string;
-  enquesta_producte?: string;
-  actiu_producte: boolean;
-  datacreacio_producte: string;
-  databaixa_producte?: string;
-}
-
+/**
+ * Representa una asignación de leads a agentes
+ */
 export interface Assignacio {
   id_fitxes_asignacions: number;
   id_agents: number;
@@ -171,6 +126,13 @@ export interface Assignacio {
   id_fitxes_trucades_fitxes_asignacions: number;
 }
 
+// -----------------------------------------------------------------
+// INTERFACES DE FILTROS
+// -----------------------------------------------------------------
+
+/**
+ * Filtros para consultar leads
+ */
 export interface LeadFilters {
   provincia_lead?: string;
   poblacio_lead?: string;
@@ -199,7 +161,12 @@ export interface LeadFilters {
   data_registre_lead?: string;
   observacions_lead?: string;
   xarxe_social_lead?: string;
+  activitat_lead?: string;
 }
+
+/**
+ * Filtros para consultar asignaciones
+ */
 export interface AssignacioFilters {
   id_agents?: number | number[];
   id_leads?: number;
@@ -213,17 +180,138 @@ export interface AssignacioFilters {
   fecha_fin?: string;
 }
 
+// -----------------------------------------------------------------
+// TIPOS Y ENUMERADOS
+// -----------------------------------------------------------------
+
+/**
+ * Estados posibles para un lead
+ */
+export enum LeadStatus {
+  PENDIENTE = "Pendiente",
+  EN_PROGRESO = "En progreso",
+  COMPLETADA = "Completada",
+  CANCELADA = "Cancelada"
+}
+
+/**
+ * Tamaños posibles para un lead (empresa)
+ */
+export enum LeadSize {
+  MICROEMPRESA = 1,
+  PEQUEÑA = 2,
+  MEDIANA = 3,
+  GRANDE = 4
+}
+
+// -----------------------------------------------------------------
+// FUNCIONES UTILITARIAS
+// -----------------------------------------------------------------
+
+/**
+ * Formatea el tamaño de un lead para su visualización
+ * @param mida - Valor numérico del tamaño del lead
+ * @returns Descripción textual del tamaño
+ */
 export const formatMidaLead = (mida?: number): string => {
   switch (mida) {
-    case 1:
+    case LeadSize.MICROEMPRESA:
       return "Microempresa";
-    case 2:
+    case LeadSize.PEQUEÑA:
       return "Pequeña";
-    case 3:
+    case LeadSize.MEDIANA:
       return "Mediana";
-    case 4:
+    case LeadSize.GRANDE:
       return "Grande";
     default:
       return "Sin definir";
   }
 };
+
+/**
+ * Valida si un objeto cumple con la estructura de un Lead
+ * @param obj - Objeto a validar
+ * @returns true si el objeto es un Lead válido
+ */
+export const isValidLead = (obj: any): obj is Lead => {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    typeof obj.id_lead === 'number' &&
+    typeof obj.nom_lead === 'string'
+  );
+};
+
+/**
+ * Crea un objeto Lead con valores por defecto
+ * @returns Un objeto Lead con valores predeterminados
+ */
+export const createEmptyLead = (): Lead => ({
+  id_lead: 0,
+  nom_lead: '',
+  actiu_lead: true,
+  fecha_registro: new Date().toISOString()
+});
+
+// -----------------------------------------------------------------
+// CONSTANTES
+// -----------------------------------------------------------------
+
+/**
+ * Valores predeterminados para crear un nuevo Lead
+ */
+export const DEFAULT_LEAD_VALUES: Partial<Lead> = {
+  actiu_lead: true,
+  mida_lead: LeadSize.PEQUEÑA,
+  conciencia_ecologica_lead: false,
+  solidaria_social_lead: false,
+  cotitza_borsa_lead: false,
+  nomes_temporada_lead: false
+};
+
+/**
+ * Valores posibles para el estado de una asignación
+ */
+export const ASSIGNMENT_STATUSES = [
+  "Pendiente",
+  "En progreso",
+  "Completada",
+  "Cancelada"
+];
+
+// -----------------------------------------------------------------
+// INTERFACES PARA GRUPOS DE FILTROS (FilterGroup)
+// -----------------------------------------------------------------
+
+/**
+ * Define la estructura base para la creación de un grupo de filtros.
+ * Corresponde a `FilterGroupBase` y `FilterGroupCreate` en Pydantic.
+ */
+export interface FilterGroupCreatePayload {
+  name: string;
+  description?: string | null;
+  filters: LeadFilters;
+}
+
+/**
+ * Define la estructura para la actualización de un grupo de filtros.
+ * Corresponde a `FilterGroupUpdate` en Pydantic.
+ */
+export interface FilterGroupUpdatePayload {
+  name?: string;
+  description?: string | null;
+  filters?: LeadFilters;
+}
+
+/**
+ * Representa un grupo de filtros en el sistema, tal como se almacena en la base de datos.
+ * Corresponde al modelo SQLAlchemy `FilterGroup` y Pydantic `FilterGroupInDB`.
+ */
+export interface FilterGroup {
+  id: number;
+  name: string;
+  description?: string | null;
+  filters: LeadFilters;
+  created_at: string; // ISO date string
+  updated_at: string; // ISO date string
+}

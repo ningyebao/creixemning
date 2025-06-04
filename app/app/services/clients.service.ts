@@ -8,12 +8,20 @@ export class ClientsService {
   }
   
   static async getById(id: number): Promise<Client> {
-    return await apiClient.get<Client>(`/clients/${id}`);  
+    return await apiClient.get<Client>(`/clients/${id}`);
   }
   
   static async create(client: Partial<Client>): Promise<Client> {
     return await apiClient.post<Client>("/clients/", client);
   }
+
   
- 
+  static async update(id: number, client: Partial<Client>): Promise<Client> {
+    return await apiClient.put<Client>(`/clients/${id}`, client);
+  }
+
+  
+  static async delete(id: number): Promise<void> {
+    await apiClient.delete<void>(`/clients/${id}`);
+  }
 }

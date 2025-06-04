@@ -1,7 +1,4 @@
-"""
-Schemas para validación y serialización de agentes
-"""
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 from typing import Optional
 from datetime import datetime
 from utils import normalize_datetime
@@ -22,7 +19,8 @@ class AgentSchema(BaseModel):
     Agents_nom_firma: Optional[str] = None
     observacions_agent: Optional[str] = None
     
-    @validator('mobil_agent')
+    @field_validator('mobil_agent', mode="before")
+    @classmethod
     def validate_mobile(cls, v):
         if v and not v.replace('+', '').replace(' ', '').isdigit():
             raise ValueError('El número de móvil debe contener solo dígitos, espacios o +')
@@ -32,10 +30,12 @@ class AgentCreate(AgentSchema):
     """Schema para crear nuevos agentes"""
     data_alta_agent: datetime = Field(default_factory=datetime.now)
     data_baixa_agent: Optional[datetime] = None
-    
-    @validator('data_alta_agent', 'data_baixa_agent')
+
+    @field_validator('data_alta_agent', 'data_baixa_agent', mode="before")
+    @classmethod
     def normalize_dates(cls, v):
-        return normalize_datetime(v)
+        # Asumiendo que normalize_datetime maneja correctamente los valores nulos
+        return normalize_datetime(v) if v else None
 
 class AgentUpdate(BaseModel):
     """Schema para actualizar agentes existentes (todos los campos opcionales)"""
@@ -55,24 +55,25 @@ class AgentUpdate(BaseModel):
     data_baixa_agent: Optional[datetime] = None
     observacions_agent: Optional[str] = None
     
-    @validator('mobil_agent')
+    @field_validator('mobil_agent', mode="before")
+    @classmethod
     def validate_mobile(cls, v):
         if v and not v.replace('+', '').replace(' ', '').isdigit():
             raise ValueError('El número de móvil debe contener solo dígitos, espacios o +')
         return v
     
-    @validator('data_alta_agent', 'data_baixa_agent')
+    @field_validator('data_alta_agent', 'data_baixa_agent', mode="before")
+    @classmethod
     def normalize_dates(cls, v):
-        return normalize_datetime(v) if v else v
+        return normalize_datetime(v) if v else None
 
 class Agent(AgentSchema):
-    """Schema completo para respuestas de agentes"""
+    """Schema completo para respuestas de la API (incluye campos generados por la BD)"""
     id_agent: int
     data_alta_agent: datetime
     data_baixa_agent: Optional[datetime] = None
-    data_creacio_agent: datetime
+    data_creacio_agent: Optional[datetime] = None  
     data_modificacio_agent: Optional[datetime] = None
-    
+
     class Config:
-        """Configuración para el schema"""
-        from_attributes = True  # Equivalente al antiguo orm_mode
+        from_attributes = True

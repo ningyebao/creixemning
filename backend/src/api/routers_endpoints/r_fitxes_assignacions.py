@@ -89,7 +89,6 @@ async def read_fitxes_assignacions_stats(
     fecha_fin: Optional[str] = Query(None, description="Fecha de fin (formato YYYY-MM-DD)"),
     db: AsyncSession = Depends(get_db)
 ):
-    # Creamos el diccionario de filtros con los valores proporcionados
     filters = {}
     if id_agents is not None:
         filters["id_agents"] = id_agents

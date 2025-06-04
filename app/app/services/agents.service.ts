@@ -1,47 +1,88 @@
 // app/services/agents.service.ts
-import { apiClient } from '~/lib/api/client';
-import type { Agent } from '~/lib/types';
+import { apiClient } from "~/lib/api/client";
+import type { Agent } from "~/lib/types";
 
-export class AgentService {
-  // Usamos la ruta exacta que está en el backend
-  private static readonly BASE_ENDPOINT = '/agents/';
+// Exportaciones individuales
+export async function getAllAgents(): Promise<Agent[]> {
+  return await apiClient.get<Agent[]>("/agents/agents/");
+}
 
+export async function getAll(): Promise<Agent[]> {
+  return getAllAgents();
+}
+
+export async function getAgentById(id: number): Promise<Agent> {
+  // Uso la ruta correcta según el Swagger
+  return await apiClient.get<Agent>(`/agents/agents/${id}`);
+}
+
+export async function getById(id: number): Promise<Agent> {
+  return getAgentById(id);
+}
+
+export async function createAgent(agent: Partial<Agent>): Promise<Agent> {
+  return await apiClient.post<Agent>("/agents/agents/", agent);
+}
+
+export async function create(agent: Partial<Agent>): Promise<Agent> {
+  return createAgent(agent);
+}
+
+export async function updateAgent(id: number, agent: Partial<Agent>): Promise<Agent> {
+  return await apiClient.put<Agent>(`/agents/agents/${id}`, agent);
+}
+
+export async function update(id: number, agent: Partial<Agent>): Promise<Agent> {
+  return updateAgent(id, agent);
+}
+
+export async function deleteAgent(id: number): Promise<void> {
+  await apiClient.delete<void>(`/agents/agents/${id}`);
+}
+
+export async function delete_(id: number): Promise<void> {
+  return deleteAgent(id);
+}
+
+// Mantenemos también la clase con métodos estáticos para compatibilidad
+export class AgentsService {
+  static async getAllAgents(): Promise<Agent[]> {
+    return getAllAgents();
+  }
+  
   static async getAll(): Promise<Agent[]> {
-    // Añadamos un log para depuración
-    console.log('AgentService: Llamando a getAll()');
-    try {
-      const agents = await apiClient.get<Agent[]>(this.BASE_ENDPOINT);
-      console.log('AgentService: Respuesta de getAll()', agents);
-      return agents;
-    } catch (error) {
-      console.error('AgentService: Error en getAll()', error);
-      throw error;
-    }
+    return getAllAgents();
   }
-
+  
+  static async getAgentById(id: number): Promise<Agent> {
+    return getAgentById(id);
+  }
+  
   static async getById(id: number): Promise<Agent> {
-    return apiClient.get<Agent>(`${this.BASE_ENDPOINT}/${id}`);
+    return getAgentById(id);
   }
-
-  static async create(agentData: Partial<Agent>): Promise<Agent> {
-    // Convertir datos null a undefined para que coincidan con el tipo Agent
-    const cleanedData = Object.fromEntries(
-      Object.entries(agentData).map(([k, v]) => [k, v === null ? undefined : v])
-    );
-    
-    return apiClient.post<Agent>(this.BASE_ENDPOINT, cleanedData);
+  
+  static async createAgent(agent: Partial<Agent>): Promise<Agent> {
+    return createAgent(agent);
   }
-
-  static async update(id: number, agentData: Partial<Agent>): Promise<Agent> {
-    // Convertir datos null a undefined para que coincidan con el tipo Agent
-    const cleanedData = Object.fromEntries(
-      Object.entries(agentData).map(([k, v]) => [k, v === null ? undefined : v])
-    );
-    
-    return apiClient.post<Agent>(`${this.BASE_ENDPOINT}/${id}`, cleanedData);
+  
+  static async create(agent: Partial<Agent>): Promise<Agent> {
+    return createAgent(agent);
   }
-
+  
+  static async updateAgent(id: number, agent: Partial<Agent>): Promise<Agent> {
+    return updateAgent(id, agent);
+  }
+  
+  static async update(id: number, agent: Partial<Agent>): Promise<Agent> {
+    return updateAgent(id, agent);
+  }
+  
+  static async deleteAgent(id: number): Promise<void> {
+    return deleteAgent(id);
+  }
+  
   static async delete(id: number): Promise<void> {
-    return apiClient.get<void>(`${this.BASE_ENDPOINT}/${id}/delete`);
+    return deleteAgent(id);
   }
 }
